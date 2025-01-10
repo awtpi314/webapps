@@ -44,7 +44,7 @@ img.mario {
   bottom: 13.334%;
   left: 50%;
 
-  translate: -50%;
+  transform: translateX(-50%);
 }
 
 @media (min-aspect-ratio: 448/240) {
@@ -78,7 +78,7 @@ img.background {
   position: fixed;
   bottom: 0;
   left: 50%;
-  translate: -50%;
+  transform: translateX(-50%);
   text-align: center;
   margin-bottom: 2em;
 
@@ -102,12 +102,12 @@ img.background {
   50%,
   80%,
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translate(-50%, -30px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translate(-50%, -15px);
   }
 }

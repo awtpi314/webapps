@@ -17,8 +17,10 @@ window.addEventListener("load", function () {
 
       if (direction === "left") {
         mario.style.scale = "-1 1";
+        mario.style.transform = "translateX(50%)";
       } else if (direction === "right") {
         mario.style.scale = "1 1";
+        mario.style.transform = "translateX(-50%)";
       }
     });
   }
@@ -34,8 +36,7 @@ window.addEventListener("load", function () {
       background.style.left =
         window.innerWidth / 2 +
         -window.scrollY * ratio +
-        Number.parseInt(background.id.slice(-1)) *
-          background.clientWidth +
+        Number.parseInt(background.id.slice(-1)) * background.clientWidth +
         "px";
     });
   }
