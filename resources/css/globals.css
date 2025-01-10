@@ -1,10 +1,6 @@
-@font-face {
-  font-family: "Super Mario 256";
-  src: url("../fonts/SuperMario256.woff") format("woff");
-}
-
 body {
-  font-family: "Super Mario 256", serif;
+  font-family: "VT323", serif;
+  font-weight: bold;
 }
 
 a {
@@ -27,13 +23,18 @@ a {
   text-align: center;
 }
 
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
 header {
   position: fixed;
   width: 100vw;
 }
 
 .project-link {
-  font-size: 1.5em;
+  font-size: 2.5rem;
 }
 
 img.mario {
@@ -86,7 +87,7 @@ img.background {
 }
 
 .scroll-prompt-text {
-  font-size: 1.5em;
+  font-size: 2em;
 
   margin: 0px;
 }
