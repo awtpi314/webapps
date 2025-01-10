@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
       background.style.left =
         window.innerWidth / 2 +
         -window.scrollY * ratio +
-        Number.parseInt(background.getAttribute("offset")) *
+        Number.parseInt(background.id.slice(-1)) *
           background.clientWidth +
         "px";
     });
