@@ -98,6 +98,7 @@ img.background {
 }
 
 @keyframes smoothBounce {
+
   0%,
   20%,
   50%,
@@ -105,9 +106,11 @@ img.background {
   100% {
     transform: translate(-50%, 0);
   }
+
   40% {
     transform: translate(-50%, -30px);
   }
+
   60% {
     transform: translate(-50%, -15px);
   }
