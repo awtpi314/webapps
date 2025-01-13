@@ -1,3 +1,4 @@
 [submodule "project1"]
 	path = project1
 	url = git@github.com:cu-cs3220-spr25/project1-awtpi314.git
+	branch = main
