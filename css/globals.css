@@ -1,0 +1,209 @@
+@property --gradient-stop {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@keyframes animate-in {
+  0% {
+    --gradient-stop: 0%;
+    opacity: 1;
+  }
+
+  50% {
+    --gradient-stop: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    --gradient-stop: 1000%;
+    opacity: 0;
+  }
+}
+
+body {
+  font-family: "VT323", serif;
+  font-weight: bold;
+
+  overflow-x: hidden;
+
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  background-color: #5c94fc;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) var(--gradient-stop));
+  animation: animate-in 2s forwards;
+  pointer-events: none;
+  z-index: 1;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (max-aspect-ratio: 1) {
+  .player-select {
+    min-width: 32vw;
+    flex-basis: 33%;
+  }
+}
+
+@media (min-aspect-ratio: 1) {
+  .player-select {
+    min-height: 32vh;
+    flex-basis: 12.5%;
+  }
+}
+
+.back-button {
+  position: absolute;
+  left: 1rem;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  display: none;
+}
+
+.layout-vertical {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-renderer {
+  flex-basis: 40%;
+
+  background: url(../images/logo.png) no-repeat center;
+  background-size: contain;
+
+  image-rendering: pixelated;
+
+  margin: 2rem auto 0 auto;
+
+  width: 80vw;
+}
+
+.image-large {
+  image-rendering: pixelated;
+
+  object-fit: contain;
+}
+
+.middle-container {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 2rem;
+}
+
+.middle-renderer {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.player-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.player-select:hover {
+  background-color: #F16116;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0.5rem #000;
+}
+
+.player-image {
+  image-rendering: pixelated;
+
+  width: 100%;
+
+  margin: 2rem 0 0 0;
+
+  cursor: pointer;
+}
+
+.player-text {
+  flex-grow: 1;
+  margin: 0px
+}
+
+.ground-renderer {
+  flex-basis: 15%;
+
+  background-image: url(../images/overworld_ground.png);
+  background-size: auto 50%;
+
+  image-rendering: pixelated;
+}
+
+#level-selector {
+  display: none;
+}
+
+@keyframes click-mario {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+
+  100% {
+    scale: 800;
+    opacity: 0;
+  }
+}
+
+@keyframes click-mario-reverse {
+  0% {
+    scale: 30;
+    opacity: 0;
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
