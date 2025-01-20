@@ -11,6 +11,7 @@ window.addEventListener("load", function () {
 
   window.addEventListener("beforeunload", function () {
     const mario = document.querySelectorAll(".level-select-mario");
+    const fadeOutBox = document.getElementById("fade-out-box");
     mario.forEach((mario) => {
       mario.style.animation = "";
     });
