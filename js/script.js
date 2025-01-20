@@ -9,6 +9,16 @@ window.addEventListener("load", function () {
     4: "project4/project4.html",
   };
 
+  window.addEventListener("beforeunload", function () {
+    mario.forEach((mario) => {
+      mario.style.animation = "";
+    });
+    fadeOutBox.style = "";
+    if (volumeEnabled) {
+      toggleVolume();
+    }
+  });
+
   function backToPlayer() {
     const selector = document.getElementById("alexander-select");
     selector.style.animation = "click-mario-reverse 0.3s forwards";
@@ -85,10 +95,6 @@ window.addEventListener("load", function () {
 
         setTimeout(() => {
           window.location.href = projectLinks[pipeNumber];
-          mario.forEach((mario) => {
-            mario.style.animation = "";
-          });
-          fadeOutBox.style = "";
         }, 1000);
       }, 700);
 
@@ -120,20 +126,22 @@ window.addEventListener("load", function () {
   const pipe4H = document.getElementById("pipe-4-horizontal");
   pipe4H.addEventListener("click", () => moveToPipeHorizontal(0, 4));
 
+  function toggleVolume() {
+    document.getElementById("no-volume-icon").style.display = volumeEnabled
+      ? "block"
+      : "none";
+    document.getElementById("volume-icon").style.display = volumeEnabled
+      ? "none"
+      : "block";
+
+    volumeEnabled = !volumeEnabled;
+
+    document.getElementById("media-player").muted = !volumeEnabled;
+    document.getElementById("sfx-player").muted = !volumeEnabled;
+    document.getElementById("media-player").play();
+  }
+
   document
     .getElementById("volume-control-box")
-    .addEventListener("click", () => {
-      document.getElementById("no-volume-icon").style.display = volumeEnabled
-        ? "block"
-        : "none";
-      document.getElementById("volume-icon").style.display = volumeEnabled
-        ? "none"
-        : "block";
-
-      volumeEnabled = !volumeEnabled;
-
-      document.getElementById("media-player").muted = !volumeEnabled;
-      document.getElementById("sfx-player").muted = !volumeEnabled;
-      document.getElementById("media-player").play();
-    });
+    .addEventListener("click", toggleVolume);
 });
