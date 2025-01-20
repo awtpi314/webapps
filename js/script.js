@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
   };
 
   window.addEventListener("beforeunload", function () {
+    const mario = document.querySelectorAll(".level-select-mario");
     mario.forEach((mario) => {
       mario.style.animation = "";
     });
