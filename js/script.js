@@ -85,6 +85,10 @@ window.addEventListener("load", function () {
 
         setTimeout(() => {
           window.location.href = projectLinks[pipeNumber];
+          mario.forEach((mario) => {
+            mario.style.animation = "";
+          });
+          fadeOutBox.style = "";
         }, 1000);
       }, 700);
 
