@@ -285,8 +285,7 @@ h1 {
 .player-image {
   image-rendering: pixelated;
 
-  flex-grow: 1;
-  object-fit: contain;
+  width: 70%;
 
   margin: 2rem 0 0 0;
 }
