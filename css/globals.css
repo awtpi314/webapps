@@ -74,6 +74,24 @@ body::after {
   z-index: -1;
 }
 
+#volume-control-box {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+#volume-icon {
+  display: none;
+}
+
+.volume-svg {
+  filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -146,29 +164,6 @@ h1 {
   }
 }
 
-.back-button {
-  position: fixed;
-  left: 1rem;
-
-  font-size: 2rem;
-  font-weight: bold;
-
-  cursor: pointer;
-
-  display: none;
-
-  z-index: 2;
-
-  color: white;
-  font-weight: lighter;
-
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
 .layout-vertical {
   display: flex;
   flex-direction: column;
@@ -183,16 +178,6 @@ h1 {
 #player-selector-page {
   left: 0;
   background-color: #5c94fc;
-}
-
-#level-selector-page {
-  left: 100vw;
-
-  background: rgb(0, 0, 0);
-
-  image-rendering: pixelated;
-
-  overflow-x: hidden;
 }
 
 @keyframes hide-player-selector {
@@ -215,26 +200,6 @@ h1 {
   }
 }
 
-@keyframes show-level-selector {
-  0% {
-    left: 100vw;
-  }
-
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes hide-level-selector {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: 100vw;
-  }
-}
-
 .top-renderer {
   flex-basis: 40%;
 
@@ -246,12 +211,6 @@ h1 {
   margin: 2rem auto 0 auto;
 
   width: 80vw;
-}
-
-.image-large {
-  image-rendering: pixelated;
-
-  object-fit: contain;
 }
 
 .middle-container {
@@ -299,49 +258,6 @@ h1 {
   box-shadow: 0 0 1rem 0.5rem #000;
 }
 
-.player-image {
-  image-rendering: pixelated;
-
-  flex-grow: 1;
-  object-fit: contain;
-
-  margin: 2rem 0 0 0;
-}
-
-.player-text {
-  flex-grow: 1;
-  margin: 0px
-}
-
-.overworld-renderer {
-  flex-basis: 15%;
-
-  background-image: url(../images/overworld_ground.png);
-  background-size: auto 50%;
-
-  image-rendering: pixelated;
-}
-
-#volume-control-box {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-
-  background-color: #777;
-
-  cursor: pointer;
-
-  z-index: 2;
-}
-
-#volume-icon {
-  display: none;
-}
-
-#level-selector {
-  display: none;
-}
-
 @keyframes click-mario {
   0% {
     scale: 1;
@@ -363,6 +279,86 @@ h1 {
   100% {
     scale: 1;
     opacity: 1;
+  }
+}
+
+.player-image {
+  image-rendering: pixelated;
+
+  flex-grow: 1;
+  object-fit: contain;
+
+  margin: 2rem 0 0 0;
+}
+
+.player-text {
+  flex-grow: 0;
+  margin: 0px
+}
+
+.overworld-renderer {
+  flex-basis: 15%;
+
+  background-image: url(../images/overworld_ground.png);
+  background-size: auto 50%;
+
+  image-rendering: pixelated;
+}
+
+.back-button {
+  position: fixed;
+  left: 1rem;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  display: none;
+
+  z-index: 2;
+
+  color: white;
+  font-weight: lighter;
+
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#level-selector-page {
+  left: 100vw;
+
+  background: rgb(0, 0, 0);
+
+  image-rendering: pixelated;
+
+  overflow-x: hidden;
+}
+
+#level-selector {
+  display: none;
+}
+
+@keyframes show-level-selector {
+  0% {
+    left: 100vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes hide-level-selector {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100vw;
   }
 }
 
@@ -393,12 +389,16 @@ h1 {
 }
 
 .level-select-mario {
-  width: 6.6667%;
+  width: 6.6667vw;
 
   position: absolute;
 
   bottom: 13.3333vw;
   left: 6.6667vw;
+}
+
+#mario-jump {
+  opacity: 0;
 }
 
 .level-select-image {
@@ -613,5 +613,5 @@ h1 {
   text-align: center;
   display: block;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
 }

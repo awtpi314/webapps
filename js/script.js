@@ -81,10 +81,14 @@ window.addEventListener("load", function () {
 
   function moveToPipeHorizontal(marioPipe, pipeNumber) {
     const mario = document.querySelectorAll(".level-select-mario");
+    const marioStand = document.getElementById("mario-stand");
+    const marioJump = document.getElementById("mario-jump");
 
     if (marioPipe >= pipeNumber) {
       document.getElementById("sfx-player").src = "audio/pipe.mp3";
       document.getElementById("sfx-player").play();
+      marioJump.style.opacity = 0;
+      marioStand.style.opacity = 1;
       mario.forEach((mario) => {
         mario.style.animation +=
           ", mario-enter-pipe-horizontal 0.7s linear forwards";
@@ -105,6 +109,8 @@ window.addEventListener("load", function () {
 
     document.getElementById("sfx-player").src = "audio/jump.mp3";
     document.getElementById("sfx-player").play();
+    marioStand.style.opacity = 0;
+    marioJump.style.opacity = 1;
 
     const animationName = `mario-jump-pipe${marioPipe + 1}`;
     mario.forEach((mario) => {
