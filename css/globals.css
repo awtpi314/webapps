@@ -101,7 +101,7 @@ h1 {
   text-align: center;
 }
 
-@media (max-aspect-ratio: 1) {
+@media (max-aspect-ratio: 1/1) {
   .player-select {
     min-width: 32vw;
     flex-basis: 33%;
@@ -116,7 +116,7 @@ h1 {
   }
 }
 
-@media (min-aspect-ratio: 1) {
+@media (min-aspect-ratio: 1/1) {
   .player-select {
     min-height: 32vh;
     flex-basis: 12.5%;
