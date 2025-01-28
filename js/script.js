@@ -3,10 +3,10 @@ window.addEventListener("load", function () {
   let currentAudio = "audio/ground.mp3";
 
   const projectLinks = {
-    1: "project1/project1.html",
-    2: "project2/project2.html",
-    3: "project3/project3.html",
-    4: "project4/project4.html",
+    1: "ape/project1/project1.html",
+    2: "ape/project2/project2.html",
+    3: "ape/project3/project3.html",
+    4: "ape/project4/project4.html",
   };
 
   window.addEventListener("beforeunload", function () {
@@ -128,11 +128,11 @@ window.addEventListener("load", function () {
   const pipe2H = document.getElementById("pipe-2-horizontal");
   pipe2H.addEventListener("click", () => moveToPipeHorizontal(0, 2));
 
-  const pipe3H = document.getElementById("pipe-3-horizontal");
-  pipe3H.addEventListener("click", () => moveToPipeHorizontal(0, 3));
+  // const pipe3H = document.getElementById("pipe-3-horizontal");
+  // pipe3H.addEventListener("click", () => moveToPipeHorizontal(0, 3));
 
-  const pipe4H = document.getElementById("pipe-4-horizontal");
-  pipe4H.addEventListener("click", () => moveToPipeHorizontal(0, 4));
+  // const pipe4H = document.getElementById("pipe-4-horizontal");
+  // pipe4H.addEventListener("click", () => moveToPipeHorizontal(0, 4));
 
   function toggleVolume() {
     document.getElementById("no-volume-icon").style.display = volumeEnabled

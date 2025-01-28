@@ -164,6 +164,10 @@ h1 {
   }
 }
 
+.pipe.disabled {
+  cursor: not-allowed;
+}
+
 .layout-vertical {
   display: flex;
   flex-direction: column;
