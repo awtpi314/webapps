@@ -114,6 +114,53 @@ h1 {
   #level-select-background-horizontal {
     display: none;
   }
+
+  .pipe {
+    width: 23.3333vh;
+    height: 13.3333vh;
+
+    position: absolute;
+
+    cursor: pointer;
+
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .pipe-horizontal {
+    display: none;
+  }
+
+  #pipe-1-vertical {
+    bottom: 13.3333vh;
+    right: 0;
+  }
+
+  #pipe-2-vertical {
+    bottom: 33.3333vh;
+    right: 0;
+  }
+
+  #pipe-3-vertical {
+    bottom: 53.3333vh;
+    right: 0;
+  }
+
+  #pipe-4-vertical {
+    bottom: 73.3333vh;
+    right: 0;
+  }
+
+  .level-select-mario {
+    width: 6.6667vh;
+
+    position: absolute;
+
+    bottom: 13.3333vh;
+    right: 26.6667vh;
+  }
 }
 
 @media (min-aspect-ratio: 1/1) {
@@ -139,6 +186,10 @@ h1 {
     cursor: pointer;
   }
 
+  .pipe-vertical {
+    display: none;
+  }
+
   #pipe-1-horizontal {
     bottom: 13.3333vw;
     left: 20vw;
@@ -161,6 +212,15 @@ h1 {
 
   #pipes-horizontal {
     z-index: 2;
+  }
+
+  .level-select-mario {
+    width: 6.6667vw;
+
+    position: absolute;
+
+    bottom: 13.3333vw;
+    left: 6.6667vw;
   }
 }
 
@@ -391,15 +451,6 @@ h1 {
   bottom: 0;
 }
 
-.level-select-mario {
-  width: 6.6667vw;
-
-  position: absolute;
-
-  bottom: 13.3333vw;
-  left: 6.6667vw;
-}
-
 #mario-jump {
   opacity: 0;
 }
@@ -607,6 +658,20 @@ h1 {
 
   100% {
     transform: translateY(150%);
+  }
+}
+
+@keyframes mario-enter-pipe-vertical {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(150%);
   }
 }
 

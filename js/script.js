@@ -128,8 +128,8 @@ window.addEventListener("load", function () {
   const pipe2H = document.getElementById("pipe-2-horizontal");
   pipe2H.addEventListener("click", () => moveToPipeHorizontal(0, 2));
 
-  // const pipe3H = document.getElementById("pipe-3-horizontal");
-  // pipe3H.addEventListener("click", () => moveToPipeHorizontal(0, 3));
+  const pipe3H = document.getElementById("pipe-3-horizontal");
+  pipe3H.addEventListener("click", () => moveToPipeHorizontal(0, 3));
 
   // const pipe4H = document.getElementById("pipe-4-horizontal");
   // pipe4H.addEventListener("click", () => moveToPipeHorizontal(0, 4));

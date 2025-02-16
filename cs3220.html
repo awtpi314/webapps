@@ -46,16 +46,30 @@
     <img src="images/level_select_horizontal.png" alt="Level Select" id="level-select-background-horizontal"
       class="level-select-image">
     <div id="pipes-horizontal">
-      <div class="pipe" id="pipe-1-horizontal">
+      <div class="pipe pipe-horizontal" id="pipe-1-horizontal">
         <p class="pipe-link">Project 1</p>
       </div>
-      <div class="pipe" id="pipe-2-horizontal">
+      <div class="pipe pipe-horizontal" id="pipe-2-horizontal">
         <p class="pipe-link">Project 2</p>
       </div>
-      <div class="pipe disabled" id="pipe-3-horizontal">
+      <div class="pipe pipe-horizontal" id="pipe-3-horizontal">
         <p class="pipe-link">Project 3</p>
       </div>
-      <div class="pipe disabled" id="pipe-4-horizontal">
+      <div class="pipe pipe-horizontal disabled" id="pipe-4-horizontal">
+        <p class="pipe-link">Project 4</p>
+      </div>
+    </div>
+    <div id="pipes-vertical">
+      <div class="pipe pipe-vertical" id="pipe-1-vertical">
+        <p class="pipe-link">Project 1</p>
+      </div>
+      <div class="pipe pipe-vertical" id="pipe-2-vertical">
+        <p class="pipe-link">Project 2</p>
+      </div>
+      <div class="pipe pipe-vertical" id="pipe-3-vertical">
+        <p class="pipe-link">Project 3</p>
+      </div>
+      <div class="pipe pipe-vertical disabled" id="pipe-4-vertical">
         <p class="pipe-link">Project 4</p>
       </div>
     </div>
@@ -71,7 +85,7 @@
   </div>
 
   <audio id="silence-audio" src="audio/silence.mp3"></audio>
-  <audio id="media-player" src="audio/ground.mp3" loop muted></audio>\
+  <audio id="media-player" src="audio/ground.mp3" loop muted></audio>
   <audio id="sfx-player" src="audio/pipe.mp3" muted></audio>
 
   <script src="js/script.js"></script>
