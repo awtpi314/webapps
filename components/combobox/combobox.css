@@ -1,0 +1,145 @@
+.outliner {
+  border: 1px solid #aaa;
+}
+
+.awtpi-combobox {
+  margin: 0.5rem;
+
+  position: relative;
+}
+
+.awtpi-combobox[data-disabled="true"] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.awtpi-combobox input {
+  border: none;
+}
+
+.awtpi-combobox input:focus {
+  outline: none;
+}
+
+.awtpi-combobox-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.awtpi-combobox-input-wrapper .awtpi-combobox-arrow {
+  margin-left: auto;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+
+  mask-image: url('images/list.svg');
+  mask-size: contain;
+  background-color: #666;
+}
+
+.awtpi-combobox-input-wrapper:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+.awtpi-combobox-input-wrapper:focus-within .awtpi-combobox-arrow {
+  transform: rotate(-90deg);
+}
+
+.awtpi-combobox-arrow {
+  transition: transform 0.2s ease;
+}
+
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes wipe-out-left {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+
+  to {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+@keyframes wipe-out-up {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
+.awtpi-combobox .awtpi-combobox-dropdown {
+  position: absolute;
+  left: 0;
+
+  background-color: #fff;
+
+  width: 100%;
+
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  clip-path: inset(0 0 100% 0);
+
+  max-height: 500%;
+  overflow-y: auto;
+}
+
+.awtpi-combobox-dropdown.render-top {
+  bottom: calc(100% + 2px);
+}
+
+.awtpi-combobox-dropdown.render-bottom {
+  top: 100%;
+}
+
+.awtpi-combobox-dropdown.open {
+  animation: 0.2s ease-in wipe-in-down both;
+}
+
+.awtpi-combobox-dropdown.close {
+  animation: 0.2s ease-out wipe-out-up both;
+}
+
+.awtpi-combobox-dropdown .awtpi-combobox-option {
+  padding: 0.25rem;
+  margin: 0.25rem;
+
+  border: 1px solid #777;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  background-color: #ccc;
+}
+
+.awtpi-combobox-dropdown .awtpi-combobox-option:hover {
+  background-color: #f0f0f0;
+}
+
+.awtpi-combobox-option.cull {
+  animation: 0.4s ease-in-out wipe-out-left both;
+}
+
+.awtpi-combobox-option .awtpi-combobox-value {
+  display: none;
+}
