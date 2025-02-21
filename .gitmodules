@@ -10,3 +10,7 @@
 	path = ape/project3
 	url = git@github.com:cu-cs3220-spr25/project3-the-well-wishers.git
 	branch = main
+[submodule "project4"]
+	path = ape/project4
+	url = https://github.com/cu-cs3220-spr25/project4-the-well-wishers
+	branch = main
