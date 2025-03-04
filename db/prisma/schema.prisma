@@ -1,0 +1,103 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id     String @id @default(cuid())
+  email  String @unique
+  name   String
+  pwHash String
+
+  plans Plan[]
+}
+
+model Plan {
+  id          String  @id @default(cuid())
+  userId      String?
+  catalogYear Int
+  majors      Major[]
+  minors      Minor[]
+
+  User User? @relation(fields: [userId], references: [id])
+}
+
+model Department {
+  id     String   @id @default(cuid())
+  name   String
+  majors Major[]
+  minors Minor[]
+  Course Course[]
+}
+
+model Major {
+  id           String  @id @default(cuid())
+  name         String
+  plans        Plan[]
+  departmentId String?
+
+  Department    Department?         @relation(fields: [departmentId], references: [id])
+  CourseToMajor MajorRequirements[]
+}
+
+model Minor {
+  id           String  @id @default(cuid())
+  name         String
+  plans        Plan[]
+  departmentId String?
+
+  Department    Department?         @relation(fields: [departmentId], references: [id])
+  CourseToMinor MinorRequirements[]
+}
+
+model Course {
+  id            String         @id @default(cuid())
+  name          String
+  description   String
+  credits       Int
+  departmentId  String?
+  prerequisites Prerequisite[] @relation("Prereq")
+  corequisites  Prerequisite[] @relation("Coreq")
+
+  Department    Department?         @relation(fields: [departmentId], references: [id])
+  CourseToMajor MajorRequirements[]
+  CourseToMinor MinorRequirements[]
+}
+
+model Prerequisite {
+  id          String  @id @default(cuid())
+  corequisite Boolean
+  courseId    String
+  prereqId    String
+
+  Course Course @relation("Prereq", fields: [courseId], references: [id])
+  Prereq Course @relation("Coreq", fields: [prereqId], references: [id])
+}
+
+model MajorRequirements {
+  id       String @id @default(cuid())
+  courseId String
+  majorId  String
+
+  Course Course @relation(fields: [courseId], references: [id])
+  Major  Major  @relation(fields: [majorId], references: [id])
+}
+
+model MinorRequirements {
+  id       String @id @default(cuid())
+  courseId String
+  minorId  String
+
+  Course Course @relation(fields: [courseId], references: [id])
+  Minor  Minor  @relation(fields: [minorId], references: [id])
+}
