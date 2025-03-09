@@ -1,9 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -23,55 +17,78 @@ model User {
 }
 
 model Plan {
-  id          String  @id @default(cuid())
-  userId      String?
-  catalogYear Int
-  majors      Major[]
-  minors      Minor[]
+  id          String @id @default(cuid())
+  userId      String
+  catalogId   String
+  displayName String
 
-  User User? @relation(fields: [userId], references: [id])
+  majors    Major[]
+  minors    Minor[]
+  majorReqs PlanMajorRequirements[]
+  minorReqs PlanMinorRequirements[]
+
+  User    User?   @relation(fields: [userId], references: [id])
+  Catalog Catalog @relation(fields: [catalogId], references: [id])
+}
+
+model Catalog {
+  id   String @id @default(cuid())
+  year Int
+
+  plans             Plan[]
+  majors            Major[]
+  minors            Minor[]
+  majorRequirements MajorRequirements[]
+  minorRequirements MinorRequirements[]
 }
 
 model Department {
-  id     String   @id @default(cuid())
-  name   String
-  majors Major[]
-  minors Minor[]
-  Course Course[]
+  id   String @id @default(cuid())
+  name String
+
+  majors  Major[]
+  minors  Minor[]
+  courses Course[]
 }
 
 model Major {
   id           String  @id @default(cuid())
   name         String
-  plans        Plan[]
   departmentId String?
+  catalogId    String?
 
-  Department    Department?         @relation(fields: [departmentId], references: [id])
+  plans         Plan[]
   CourseToMajor MajorRequirements[]
+
+  Department Department? @relation(fields: [departmentId], references: [id])
+  Catalog    Catalog?    @relation(fields: [catalogId], references: [id])
 }
 
 model Minor {
   id           String  @id @default(cuid())
   name         String
-  plans        Plan[]
   departmentId String?
+  catalogId    String?
 
-  Department    Department?         @relation(fields: [departmentId], references: [id])
+  plans         Plan[]
   CourseToMinor MinorRequirements[]
+
+  Department Department? @relation(fields: [departmentId], references: [id])
+  Catalog    Catalog?    @relation(fields: [catalogId], references: [id])
 }
 
 model Course {
-  id            String         @id @default(cuid())
-  name          String
-  description   String
-  credits       Int
-  departmentId  String?
-  prerequisites Prerequisite[] @relation("Prereq")
-  corequisites  Prerequisite[] @relation("Coreq")
+  id           String  @id @default(cuid())
+  name         String
+  description  String
+  credits      Int
+  departmentId String?
 
-  Department    Department?         @relation(fields: [departmentId], references: [id])
+  prerequisites Prerequisite[]      @relation("Prereq")
   CourseToMajor MajorRequirements[]
   CourseToMinor MinorRequirements[]
+
+  Department Department? @relation(fields: [departmentId], references: [id])
 }
 
 model Prerequisite {
@@ -81,23 +98,48 @@ model Prerequisite {
   prereqId    String
 
   Course Course @relation("Prereq", fields: [courseId], references: [id])
-  Prereq Course @relation("Coreq", fields: [prereqId], references: [id])
+}
+
+model PlanMajorRequirements {
+  id            String @id @default(cuid())
+  planId        String
+  requirementId String
+
+  Plan        Plan              @relation(fields: [planId], references: [id])
+  Requirement MajorRequirements @relation(fields: [requirementId], references: [id])
 }
 
 model MajorRequirements {
-  id       String @id @default(cuid())
-  courseId String
-  majorId  String
+  id        String @id @default(cuid())
+  courseId  String
+  majorId   String
+  catalogId String
 
-  Course Course @relation(fields: [courseId], references: [id])
-  Major  Major  @relation(fields: [majorId], references: [id])
+  PlanMajorRequirements PlanMajorRequirements[]
+
+  Course  Course  @relation(fields: [courseId], references: [id])
+  Major   Major   @relation(fields: [majorId], references: [id])
+  Catalog Catalog @relation(fields: [catalogId], references: [id])
+}
+
+model PlanMinorRequirements {
+  id            String @id @default(cuid())
+  planId        String
+  requirementId String
+
+  Plan        Plan              @relation(fields: [planId], references: [id])
+  Requirement MinorRequirements @relation(fields: [requirementId], references: [id])
 }
 
 model MinorRequirements {
-  id       String @id @default(cuid())
-  courseId String
-  minorId  String
+  id        String @id @default(cuid())
+  courseId  String
+  minorId   String
+  catalogId String
 
-  Course Course @relation(fields: [courseId], references: [id])
-  Minor  Minor  @relation(fields: [minorId], references: [id])
+  PlanMinorRequirements PlanMinorRequirements[]
+
+  Course  Course  @relation(fields: [courseId], references: [id])
+  Minor   Minor   @relation(fields: [minorId], references: [id])
+  Catalog Catalog @relation(fields: [catalogId], references: [id])
 }
