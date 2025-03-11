@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "james.cedarville.edu",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "James",
+      "database": "cs3220_Spr25_G2",
+      "username": "cs3220_Spr25_G2"
+    }
+  ]
+}

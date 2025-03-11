@@ -7,139 +7,139 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id     String @id @default(cuid())
-  email  String @unique
-  name   String
-  pwHash String
-
-  plans Plan[]
+model catalog {
+  id    Int     @id @default(autoincrement())
+  year  Int?
+  plans plans[]
 }
 
-model Plan {
-  id          String @id @default(cuid())
-  userId      String
-  catalogId   String
-  displayName String
-
-  majors    Major[]
-  minors    Minor[]
-  majorReqs PlanMajorRequirements[]
-  minorReqs PlanMinorRequirements[]
-
-  User    User?   @relation(fields: [userId], references: [id])
-  Catalog Catalog @relation(fields: [catalogId], references: [id])
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model course {
+  id                 Int                  @id @default(autoincrement())
+  title              String?              @db.VarChar(40)
+  decription         String?              @db.VarChar(60)
+  credits            Float?               @db.Float
+  major_requirements major_requirements[]
+  minor_requirements minor_requirements[]
+  semester_to_course semester_to_course[]
 }
 
-model Catalog {
-  id   String @id @default(cuid())
-  year Int
-
-  plans             Plan[]
-  majors            Major[]
-  minors            Minor[]
-  majorRequirements MajorRequirements[]
-  minorRequirements MinorRequirements[]
+model department {
+  id    Int     @id @default(autoincrement())
+  name  String? @db.VarChar(40)
+  major major[]
+  minor minor[]
 }
 
-model Department {
-  id   String @id @default(cuid())
-  name String
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model major {
+  id                 Int                  @id @default(autoincrement())
+  name               String?              @db.VarChar(40)
+  dept_id            Int?
+  num_credits        Float?               @db.Float
+  department         department?          @relation(fields: [dept_id], references: [id], onDelete: Cascade, map: "major_ibfk_1")
+  major_requirements major_requirements[]
+  major_to_plan      major_to_plan[]
 
-  majors  Major[]
-  minors  Minor[]
-  courses Course[]
+  @@index([dept_id], map: "dept_id")
 }
 
-model Major {
-  id           String  @id @default(cuid())
-  name         String
-  departmentId String?
-  catalogId    String?
+model major_requirements {
+  id        Int      @id @default(autoincrement())
+  elective  Boolean?
+  major_id  Int?
+  course_id Int?
+  major     major?   @relation(fields: [major_id], references: [id], onDelete: Cascade, map: "major_requirements_ibfk_1")
+  course    course?  @relation(fields: [course_id], references: [id], onDelete: Cascade, map: "major_requirements_ibfk_2")
 
-  plans         Plan[]
-  CourseToMajor MajorRequirements[]
-
-  Department Department? @relation(fields: [departmentId], references: [id])
-  Catalog    Catalog?    @relation(fields: [catalogId], references: [id])
+  @@index([course_id], map: "course_id")
+  @@index([major_id], map: "major_id")
 }
 
-model Minor {
-  id           String  @id @default(cuid())
-  name         String
-  departmentId String?
-  catalogId    String?
+model major_to_plan {
+  major_id Int
+  plan_id  Int
+  major    major @relation(fields: [major_id], references: [id], onDelete: Cascade, map: "major_to_plan_ibfk_1")
+  plans    plans @relation(fields: [plan_id], references: [id], onDelete: Cascade, map: "major_to_plan_ibfk_2")
 
-  plans         Plan[]
-  CourseToMinor MinorRequirements[]
-
-  Department Department? @relation(fields: [departmentId], references: [id])
-  Catalog    Catalog?    @relation(fields: [catalogId], references: [id])
+  @@id([major_id, plan_id])
+  @@index([plan_id], map: "plan_id")
 }
 
-model Course {
-  id           String  @id @default(cuid())
-  name         String
-  description  String
-  credits      Int
-  departmentId String?
+model minor {
+  id                 Int                  @id @default(autoincrement())
+  name               String?              @db.VarChar(40)
+  dept_id            Int?
+  department         department?          @relation(fields: [dept_id], references: [id], onDelete: Cascade, map: "minor_ibfk_1")
+  minor_requirements minor_requirements[]
+  minor_to_plan      minor_to_plan[]
 
-  prerequisites Prerequisite[]      @relation("Prereq")
-  CourseToMajor MajorRequirements[]
-  CourseToMinor MinorRequirements[]
-
-  Department Department? @relation(fields: [departmentId], references: [id])
+  @@index([dept_id], map: "dept_id")
 }
 
-model Prerequisite {
-  id          String  @id @default(cuid())
-  corequisite Boolean
-  courseId    String
-  prereqId    String
+model minor_requirements {
+  id        Int      @id @default(autoincrement())
+  elective  Boolean?
+  minor_id  Int?
+  course_id Int?
+  minor     minor?   @relation(fields: [minor_id], references: [id], onDelete: Cascade, map: "minor_requirements_ibfk_1")
+  course    course?  @relation(fields: [course_id], references: [id], onDelete: Cascade, map: "minor_requirements_ibfk_2")
 
-  Course Course @relation("Prereq", fields: [courseId], references: [id])
+  @@index([course_id], map: "course_id")
+  @@index([minor_id], map: "minor_id")
 }
 
-model PlanMajorRequirements {
-  id            String @id @default(cuid())
-  planId        String
-  requirementId String
+model minor_to_plan {
+  minor_id Int
+  plan_id  Int
+  minor    minor @relation(fields: [minor_id], references: [id], onDelete: Cascade, map: "minor_to_plan_ibfk_1")
+  plans    plans @relation(fields: [plan_id], references: [id], onDelete: Cascade, map: "minor_to_plan_ibfk_2")
 
-  Plan        Plan              @relation(fields: [planId], references: [id])
-  Requirement MajorRequirements @relation(fields: [requirementId], references: [id])
+  @@id([minor_id, plan_id])
+  @@index([plan_id], map: "plan_id")
 }
 
-model MajorRequirements {
-  id        String @id @default(cuid())
-  courseId  String
-  majorId   String
-  catalogId String
+model plans {
+  id            Int             @id @default(autoincrement())
+  user_id       Int?
+  catalog_id    Int?
+  name          String?         @db.VarChar(40)
+  major_to_plan major_to_plan[]
+  minor_to_plan minor_to_plan[]
+  user          user?           @relation(fields: [user_id], references: [id], onDelete: Cascade, map: "plans_ibfk_1")
+  catalog       catalog?        @relation(fields: [catalog_id], references: [id], onDelete: Cascade, map: "plans_ibfk_2")
+  semester      semester[]
 
-  PlanMajorRequirements PlanMajorRequirements[]
-
-  Course  Course  @relation(fields: [courseId], references: [id])
-  Major   Major   @relation(fields: [majorId], references: [id])
-  Catalog Catalog @relation(fields: [catalogId], references: [id])
+  @@index([catalog_id], map: "catalog_id")
+  @@index([user_id], map: "user_id")
 }
 
-model PlanMinorRequirements {
-  id            String @id @default(cuid())
-  planId        String
-  requirementId String
-
-  Plan        Plan              @relation(fields: [planId], references: [id])
-  Requirement MinorRequirements @relation(fields: [requirementId], references: [id])
+model user {
+  id       Int     @id @default(autoincrement())
+  name     String? @db.VarChar(40)
+  email    String? @db.VarChar(40)
+  password String? @db.VarChar(40)
+  plans    plans[]
 }
 
-model MinorRequirements {
-  id        String @id @default(cuid())
-  courseId  String
-  minorId   String
-  catalogId String
+model semester {
+  id                 Int                  @id @default(autoincrement())
+  plan_id            Int?
+  year               Int?
+  season             String?              @db.VarChar(40)
+  plans              plans?               @relation(fields: [plan_id], references: [id], onDelete: Cascade, map: "semester_ibfk_1")
+  semester_to_course semester_to_course[]
 
-  PlanMinorRequirements PlanMinorRequirements[]
+  @@index([plan_id], map: "plan_id")
+}
 
-  Course  Course  @relation(fields: [courseId], references: [id])
-  Minor   Minor   @relation(fields: [minorId], references: [id])
-  Catalog Catalog @relation(fields: [catalogId], references: [id])
+model semester_to_course {
+  id          Int       @id @default(autoincrement())
+  semester_id Int?
+  course_id   Int?
+  semester    semester? @relation(fields: [semester_id], references: [id], onDelete: Cascade, map: "semester_to_course_ibfk_1")
+  course      course?   @relation(fields: [course_id], references: [id], onDelete: Cascade, map: "semester_to_course_ibfk_2")
+
+  @@index([course_id], map: "course_id")
+  @@index([semester_id], map: "semester_id")
 }
