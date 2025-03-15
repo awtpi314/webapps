@@ -16,12 +16,27 @@ model catalog {
 /// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
 model course {
   id                 Int                  @id @default(autoincrement())
+  subject_code       String?              @db.VarChar(40)
+  number             String?              @db.VarChar(40)
+  min_credits        Float?               @db.Float
+  max_credits        Float?               @db.Float
   title              String?              @db.VarChar(40)
-  decription         String?              @db.VarChar(60)
-  credits            Float?               @db.Float
+  description        String?              @db.VarChar(60)
+  years_offered      String?              @db.VarChar(40)
+  terms_offered      String?              @db.VarChar(40)
   major_requirements major_requirements[]
   minor_requirements minor_requirements[]
   semester_to_course semester_to_course[]
+  primary_course      equal_courses[] @relation("Primary")
+  equal_course      equal_courses[] @relation("Equivalent")
+}
+
+model equal_courses {
+  id                Int     @id @default(autoincrement())
+  course_id         Int?
+  eq_course_id      Int?
+  course            course? @relation("Primary", fields: [course_id], references: [id], onDelete: Cascade)
+  equivalent_course course? @relation("Equivalent", fields: [eq_course_id], references: [id], onDelete: Cascade)
 }
 
 model department {
