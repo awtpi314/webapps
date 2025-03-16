@@ -1,0 +1,39 @@
+{
+  "Courses": [
+    {
+      "MatchingSectionIds": [
+        "147663",
+        "152956",
+        "151408",
+        "151409",
+        "151411",
+        "151412",
+        "153372"
+      ],
+      "Id": "953",
+      "SubjectCode": "ACCT",
+      "Number": "2110",
+      "MinimumCredits": 3,
+      "MaximumCredits": null,
+      "VariableCreditIncrement": null,
+      "Ceus": null,
+      "Title": "Prin Accounting I",
+      "Description": "An introduction to accounting for business organizations with an emphasis on financial statement preparation and interpretation. Topics include: the accounting cycle, present value, and accounting for stock and debt instruments. Prerequisite: sophomore status.",
+      "TermSessionCycle": "FS",
+      "TermYearlyCycle": "A",
+      "YearsOffered": "All Years",
+      "TermsOffered": "Fall/Spring",
+      "LocationCodes": [],
+      "IsPseudoCourse": false,
+      "Requisites": [],
+      "EquatedCourseIds": [
+        "ACCT_211",
+        "ACCT_101"
+      ],
+      "LocationCycleRestrictions": [],
+      "VerifyGrades": null,
+      "ShowDropRoster": false
+    }
+  ]
+}
+ 
