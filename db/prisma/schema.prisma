@@ -27,8 +27,8 @@ model course {
   major_requirements major_requirements[]
   minor_requirements minor_requirements[]
   semester_to_course semester_to_course[]
-  primary_course      equal_courses[] @relation("Primary")
-  equal_course      equal_courses[] @relation("Equivalent")
+  primary_course     equal_courses[]      @relation("Primary")
+  equal_course       equal_courses[]      @relation("Equivalent")
 }
 
 model equal_courses {
@@ -132,8 +132,8 @@ model plans {
 model user {
   id       Int     @id @default(autoincrement())
   name     String? @db.VarChar(40)
-  email    String? @db.VarChar(40)
-  password String? @db.VarChar(40)
+  email    String? @db.VarChar(40) @unique
+  password String? @db.VarChar(60)
   plans    plans[]
 }
 
