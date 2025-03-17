@@ -1,4 +1,6 @@
-const fs = require('fs');
+#!/usr/bin/env node
+
+import fs from 'fs';
 
 /**
  * Converts a Prisma schema file to DBML format
@@ -234,8 +236,7 @@ function mapPrismaTypeToDBML(prismaType) {
     'Date': 'Date',
     'Time': 'Time',
     'Json': 'Json',
-    'Bytes': 'Binary',
-    'Unsupported': 'Text'
+    'Bytes': 'Binary'
   };
   
   return typeMap[prismaType];
@@ -256,8 +257,10 @@ function removeComments(content) {
   return noComments;
 }
 
-// For CLI usage
-if (require.main === module) {
+// Check if this file is being run directly
+const isMainModule = process.argv[1] === import.meta.url.substring(7); // Remove 'file://' prefix
+
+if (isMainModule || process.argv[1].endsWith(process.argv[1].split('/').pop())) {
   const args = process.argv.slice(2);
   
   if (args.length < 2) {
@@ -268,4 +271,4 @@ if (require.main === module) {
   convertPrismaToDBML(args[0], args[1]);
 }
 
-module.exports = { convertPrismaToDBML };
+export { convertPrismaToDBML, parsePrismaToDBML };
