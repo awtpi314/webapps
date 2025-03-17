@@ -21,7 +21,7 @@ model course {
   min_credits        Float?               @db.Float
   max_credits        Float?               @db.Float
   title              String?              @db.VarChar(40)
-  description        String?              @db.VarChar(60)
+  description        String?              @db.VarChar(4096)
   years_offered      String?              @db.VarChar(40)
   terms_offered      String?              @db.VarChar(40)
   major_requirements major_requirements[]
@@ -29,6 +29,7 @@ model course {
   semester_to_course semester_to_course[]
   primary_course     equal_courses[]      @relation("Primary")
   equal_course       equal_courses[]      @relation("Equivalent")
+  track_requirements track_tocourse[]
 }
 
 model equal_courses {
@@ -157,4 +158,22 @@ model semester_to_course {
 
   @@index([course_id], map: "course_id")
   @@index([semester_id], map: "semester_id")
+}
+
+model tracks {
+  id    Int     @id @default(autoincrement())
+  name  String @db.VarChar(40)
+  track_to_course track_tocourse[]
+}
+
+model track_tocourse {
+  id        Int      @id @default(autoincrement())
+  elective  Boolean?
+  track_id  Int?
+  course_id Int?
+  track     tracks?  @relation(fields: [track_id], references: [id], onDelete: Cascade, map: "trackRequirements_ibfk_1")
+  course    course?  @relation(fields: [course_id], references: [id], onDelete: Cascade, map: "trackRequirements_ibfk_2")
+
+  @@index([course_id], map: "course_id")
+  @@index([track_id], map: "track_id")
 }
