@@ -1,5 +1,5 @@
 /**
- * Script to filter a JSON object, keeping only one specified attribute.
+ * Script to filter a JSON object, keeping only one specified attribute. 
  * Usage: node filter-json.js <input-file.json> <attribute-to-keep>
  * Or: ./filter-json.js <input-file.json> <attribute-to-keep> (if file is executable)
  */

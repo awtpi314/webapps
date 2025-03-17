@@ -29,7 +29,7 @@ model course {
   semester_to_course semester_to_course[]
   primary_course     equal_courses[]      @relation("Primary")
   equal_course       equal_courses[]      @relation("Equivalent")
-  track_requirements track_tocourse[]
+  track_requirements track_to_course[]
 }
 
 model equal_courses {
@@ -163,10 +163,10 @@ model semester_to_course {
 model tracks {
   id    Int     @id @default(autoincrement())
   name  String @db.VarChar(40)
-  track_to_course track_tocourse[]
+  track_to_course track_to_course[]
 }
 
-model track_tocourse {
+model track_to_course {
   id        Int      @id @default(autoincrement())
   elective  Boolean?
   track_id  Int?
