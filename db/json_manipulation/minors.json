@@ -1,0 +1,1609 @@
+{
+  "minors": [
+    {
+      "name": "Cyber Operations Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 20,
+      "numcomplete": 13,
+      "numcreditscomplete": 38,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CS-1210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-1220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-2210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3410",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-1000",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-2310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3320",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3420",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-4310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CY-4330",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-4810",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CY-4820",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-1010",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-4010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Interdisciplinary Elective",
+          "complete": false,
+          "type": "group",
+          "credits": "0",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "CRJU-4160",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CRJU-4320",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3080",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3220",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ITM-3450",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PUAD-3690",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Christian Education Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "16",
+      "required": 3,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 16,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BECE-2400",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BECE-3680",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-3700",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-3720",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "6",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 6,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BEPT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BEPT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BEPT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marketing Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "15",
+      "required": 3,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 15,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "MRKT-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "9",
+          "required": 3,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 9,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "MRKT-3630",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MRKT-3660",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MRKT-3680",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MRKT-3690",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MRKT-4620",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Christian Ministries Management Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "19",
+      "required": 7,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 19,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ACCT-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-2730",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3530",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3680",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "International Business Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "18",
+      "required": 3,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 18,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BUS-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "9",
+          "required": 3,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 9,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "ECON-3550",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ECON-3360",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MGMT-3570",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MRKT-4620",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "ANTH-1800",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BETH-2260",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "POLS-3650",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Music Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "16",
+      "required": 8,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 16,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CDMU-2600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GMUS-1030",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HUM-2430",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PFMU-3000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "PFMU",
+          "min": 3000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PLMU-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "PLMU",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-1010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-1210",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-1310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Church History Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "18",
+      "required": 6,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 18,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BEHI-2500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BETH-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-3030",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-3050",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-3300",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BECE-3540",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-2420",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3310",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-4620",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comprehensive Communication Arts Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "16",
+      "required": 8,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 16,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "COM-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-2000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-2050",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-2200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-3100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-3240",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-4110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-4120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Criminal Justice Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "18",
+      "required": 2,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 18,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CRJU-1310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "15",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 15,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "CRJU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "CRJU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CRJU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "CRJU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CRJU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "CRJU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CRJU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "CRJU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CRJU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "CRJU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CRJU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "CRJU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Broadcasting and Digital Media Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "15",
+      "required": 5,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 15,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BRDM-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BRDM-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BRDM-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "0",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BRDM-2130",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BRDM-3605",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BRDM-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BRDM",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BRDM-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BRDM",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Psychology Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "18",
+      "required": 3,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 18,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "PYCH-1600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-2640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "12",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 12,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PYCH",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Geology Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "17",
+      "required": 4,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 17,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "GEOL-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "8",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 8,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "GEOL-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "GEOL",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GEOL-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "GEOL",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GEOL-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "GEOL",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graphic Design Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "22",
+      "required": 2,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 22,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "Graphic Design Core",
+          "complete": false,
+          "type": "group",
+          "credits": "19",
+          "required": 7,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 19,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "ART-1100",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ART-1210",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ART-1230",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-1100",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-1150",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-2100",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-3220",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "ART-2250",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-2601",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-1220",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-3230",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-3300",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GDES-4220",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "EMTC-2610",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "TPC-2000",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    }    
+  ]
+}

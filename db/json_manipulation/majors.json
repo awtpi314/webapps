@@ -1,0 +1,6626 @@
+{
+  "majors": [
+    {
+      "name": "Computer Science Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 19,
+      "numcomplete": 14,
+      "numcreditscomplete": 41,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CS-1210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-1220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-2210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3410",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CS-3610",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-1000",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3420",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-1010",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-4010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MATH-2520",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "CS-4810",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CY-4810",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "CS-4820",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "CY-4820",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Computer Engineering Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 22,
+      "numcomplete": 8,
+      "numcreditscomplete": 23,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CS-1210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-1220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-2210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3410",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-1010",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-3010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4210",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4810",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4820",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGEE-2010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGEE-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGEE-3210",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-4010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGME-1810",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGME-2570",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGME-3170",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Geology",
+      "complete": false,
+      "type": "group",
+      "credits": "19",
+      "required": 0,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 19,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BIOA-3010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-4100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "GEOL",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Criminal Justice Requirements",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 6,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CRJU-1310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CRJU-3350",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CRJU-3390",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CRJU-3400",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CRJU-4320",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-4990",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Geoscience Requirements",
+      "complete": false,
+      "type": "group",
+      "credits": "87",
+      "required": 26,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 87,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BIO-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BIO-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BIO-2500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BIO-2600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CHEM-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CHEM-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CHEM-2210",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ENVS-1010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ENVS-2100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ENVS-3200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ENVS-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ESCI-2410",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-2100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3300",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-3800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-4100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GEOL-4800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GMTH-1030",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GMTH-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-3690",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BIO-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BIO",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BIO-4000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BIO",
+              "min": 4000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ENVS-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "ENVS",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ENVS-4000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "ENVS",
+              "min": 4000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GEOL-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "GEOL",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GEOL-4000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "GEOL",
+              "min": 4000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Accounting Core",
+      "complete": false,
+      "type": "group",
+      "credits": "59",
+      "required": 22,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 59,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ACCT-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-3120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-3150",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-3170",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-4110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-4120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2150",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2180",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-4420",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2330",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2340",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-3710",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-4510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Finance Core",
+      "complete": false,
+      "type": "group",
+      "credits": "53",
+      "required": 20,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 53,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ACCT-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2150",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2180",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3150",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-4420",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2330",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2340",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-3310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-3710",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-3730",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-4770",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-4510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Management Elective Tracks",
+      "complete": false,
+      "type": "group",
+      "credits": "9",
+      "required": 1,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 9,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "Human Resource Management",
+          "complete": false,
+          "type": "group",
+          "credits": "9",
+          "required": 3,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 9,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "MGMT-3530",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MGMT-3580",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MGMT-4530",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "Operations Management",
+          "complete": false,
+          "type": "group",
+          "credits": "9",
+          "required": 3,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 9,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "MGMT-4520",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MGMT-4570",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ITM-3600",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marketing Core",
+      "complete": false,
+      "type": "group",
+      "credits": "50",
+      "required": 19,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 50,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ACCT-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2150",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2180",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-4420",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2330",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2340",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "FIN-3710",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-4510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3630",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-4610",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "complete": false,
+      "type": "group",
+      "credits": null,
+      "required": 6,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "Proficiencies",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 2,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "CLMU-1860",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "",
+              "complete": false,
+              "type": "group",
+              "credits": null,
+              "required": 1,
+              "numcomplete": 0,
+              "numcreditscomplete": 0,
+              "creditsneeded": 0,
+              "hidden": false,
+              "needed": true,
+              "status": "no",
+              "children": [
+                {
+                  "name": "",
+                  "complete": false,
+                  "type": "group",
+                  "credits": null,
+                  "required": 2,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 0,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "CLMU-1810",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "CLMU-1820",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "PLMU-1830",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "THMU-1010",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "THMU-1250",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-2250",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-2260",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "6",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 6,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "2",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 2,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "PFMU-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PFMU",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PFMU-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PFMU",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Worship",
+      "complete": false,
+      "type": "group",
+      "credits": "18",
+      "required": 7,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 18,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CHMU-2060",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "WSHP-1010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "WSHP-1020",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "WSHP-2200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "WSHP-2100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "WSHP-3100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "WSHP-4900",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Music Performance",
+      "complete": false,
+      "type": "group",
+      "credits": "10",
+      "required": 4,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 10,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "2",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 2,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "PFMU-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PFMU",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PFMU-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PFMU",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PFMU-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PFMU",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PFMU-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PFMU",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "6",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 6,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PLMU-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "PLMU",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "PLMU-3920",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PLMU-4900",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Music Composition",
+      "complete": false,
+      "type": "group",
+      "credits": "24",
+      "required": 12,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 24,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CLMU-2850",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CLMU-2860",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PLMU-1800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PLMU-2800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PLMU-3800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PLMU-4800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-4100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-4110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "THMU-4130",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "TYMU-1251",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "TYMU-2250",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "TYMU-2251",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "THMU-4140",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "TYMU-3250",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Music Education",
+      "complete": false,
+      "type": "group",
+      "credits": "24",
+      "required": 4,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 24,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "GMUS-1030",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EDMU-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EDMU-3710",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EDMU-3720",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Psychology Core",
+      "complete": false,
+      "type": "group",
+      "credits": "27",
+      "required": 12,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 27,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "PYCH-1600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-2600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-2610",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-2640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-3610",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-3620",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-3690",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-3730",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-3900",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-4640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PYCH-4990",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "History Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 10,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "GSS-3640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-2000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-2010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-2020",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-3000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "HIST-4700",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-4710",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-4720",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "History Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "12",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 12,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "HIST-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "HIST",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "HIST",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "HIST",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "HIST",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "HIST",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "HIST",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "Non-Western",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "HIST-3080",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3200",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3210",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3220",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Biblical Studies Core",
+      "complete": false,
+      "type": "group",
+      "credits": "51",
+      "required": 17,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 51,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BTBL-2010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTBS-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTBS-2020",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTBS-4310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTBS-4850",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTHT-2500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTHT-4100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTHT-4300",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTNT-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTNT-3130",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BTNT-3120",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTNT-3140",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "BTOT-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTOT-3310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 2,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BTOT-3140",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTOT-3150",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTOT-3210",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTOT-3410",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "BTPA-2200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 2,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BTHT-3340",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTHT-3350",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTHT-3360",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTHT-3370",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BTAT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BTAT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BTCM-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BTCM",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Political Science Core",
+      "complete": false,
+      "type": "group",
+      "credits": "21",
+      "required": 7,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 21,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "GSS-3640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-2000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-3790",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-4900",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Prelaw Core",
+      "complete": false,
+      "type": "group",
+      "credits": null,
+      "required": 17,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ACCT-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTPA-2200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BTPA-2240",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2180",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CRJU-3400",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-1350",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-3640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-4900",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-2620",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "INTL-2100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-3760",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-4630",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-4640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PWID-3010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PWID-3011",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Public Administration Core",
+      "complete": false,
+      "type": "group",
+      "credits": null,
+      "required": 19,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ACCT-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ACCT-4150",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-2160",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2330",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ECON-2340",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-3640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "GSS-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-1510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MGMT-3500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "MRKT-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-2620",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-4630",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PUAD-3100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PUAD-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PUAD-3690",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "PUAD-4800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "TPC-3010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "TPC-3011",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "International Studies Core",
+      "complete": false,
+      "type": "group",
+      "credits": "21",
+      "required": 7,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 21,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ANTH-1800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BEPH-2260",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BUS-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "COM-2140",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "PYCH-1800",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "HIST-2010",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-2020",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "INTL-3190",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "INTL-3790",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Preagriculture",
+      "complete": false,
+      "type": "group",
+      "credits": null,
+      "required": 9,
+      "numcomplete": 3,
+      "numcreditscomplete": 11,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BEGE-1710",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BEGE-1720",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BIO-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CHEM-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ENG-1400",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": true,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 1,
+          "numcreditscomplete": 5,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "yes",
+          "children": [
+            {
+              "name": "GMTH-1030",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": false,
+              "status": "ino",
+              "sub": ""
+            },
+            {
+              "name": "MATH-1710",
+              "complete": true,
+              "present": true,
+              "type": "course",
+              "needed": false,
+              "status": "yes",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "GSS-1100",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "HUM-1400",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "Emphasis",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "Agricultural Business",
+              "complete": false,
+              "type": "group",
+              "credits": null,
+              "required": 3,
+              "numcomplete": 0,
+              "numcreditscomplete": 0,
+              "creditsneeded": 0,
+              "hidden": false,
+              "needed": true,
+              "status": "no",
+              "children": [
+                {
+                  "name": "",
+                  "complete": false,
+                  "type": "group",
+                  "credits": "10",
+                  "required": 0,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 10,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "ACCT-2110",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BIO-1120",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BIO-2500",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BIO-2600",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BIO-2210",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BIO-3300",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BUS-2150",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "ECON-2330",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "ECON-2340",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "MGMT-3500",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "Humanities Electives",
+                  "complete": false,
+                  "type": "group",
+                  "credits": "6",
+                  "required": 0,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 6,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "ART-1100",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "ANTH-1800",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BEPH-2200",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BEPH-2250",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BEPH-2260",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "COM-2300",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "COM-2140",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "COM-4110",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "EDUC-2400",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "EDUC-4500",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "EGGN-3110",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HLMU-2310",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HUM-2430",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "NSG-3050",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "PYCH-3720",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "THTR-1410",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "LIT-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "LIT",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "FREN-2000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "FREN",
+                      "min": 2000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "GER-2000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "GER",
+                      "min": 2000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "SPAN-2000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "SPAN",
+                      "min": 2000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HON-1010",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HON-1020",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "Social Science Elective",
+                  "complete": false,
+                  "type": "group",
+                  "credits": "3",
+                  "required": 0,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 3,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "PYCH-1600",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HIST-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "HIST",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "ANTH-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "ANTH",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "CRJU-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "CRJU",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "GEO-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "GEO",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "INTL-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "INTL",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "POLS-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "POLS",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "PUAD-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "PUAD",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "SOC-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "SOC",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "SWK-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "SWK",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Agriculture Science",
+              "complete": false,
+              "type": "group",
+              "credits": null,
+              "required": 10,
+              "numcomplete": 1,
+              "numcreditscomplete": 5,
+              "creditsneeded": 0,
+              "hidden": false,
+              "needed": true,
+              "status": "no",
+              "children": [
+                {
+                  "name": "BIO-1120",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "BIO-2500",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "BIO-2600",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "CHEM-3510",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "CHEM-3520",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "MATH-1720",
+                  "complete": true,
+                  "present": true,
+                  "type": "course",
+                  "needed": true,
+                  "status": "yes",
+                  "sub": ""
+                },
+                {
+                  "name": "MATH-3110",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "",
+                  "complete": false,
+                  "type": "group",
+                  "credits": null,
+                  "required": 1,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 0,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "CHEM-3710",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BIO-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "BIO",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "Humanities Electives",
+                  "complete": false,
+                  "type": "group",
+                  "credits": "3",
+                  "required": 0,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 3,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "ART-1100",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "ANTH-1800",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BEPH-2200",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BEPH-2250",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "BEPH-2260",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "COM-2300",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "COM-2140",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "COM-4110",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "EDUC-2400",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "EDUC-4500",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "EGGN-3110",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HLMU-2310",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HUM-2430",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "NSG-3050",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "PYCH-3720",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "THTR-1410",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "LIT-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "LIT",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "FREN-2000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "FREN",
+                      "min": 2000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "GER-2000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "GER",
+                      "min": 2000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "SPAN-2000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "SPAN",
+                      "min": 2000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HON-1010",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HON-1020",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                },
+                {
+                  "name": "Social Science Elective",
+                  "complete": false,
+                  "type": "group",
+                  "credits": "3",
+                  "required": 0,
+                  "numcomplete": 0,
+                  "numcreditscomplete": 0,
+                  "creditsneeded": 3,
+                  "hidden": false,
+                  "needed": true,
+                  "status": "no",
+                  "children": [
+                    {
+                      "name": "PYCH-1600",
+                      "complete": false,
+                      "present": false,
+                      "type": "course",
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "HIST-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "HIST",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "ANTH-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "ANTH",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "CRJU-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "CRJU",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "GEO-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "GEO",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "INTL-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "INTL",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "POLS-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "POLS",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "PUAD-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "PUAD",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "SOC-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "SOC",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    },
+                    {
+                      "name": "SWK-1000+",
+                      "complete": false,
+                      "type": "wildcard",
+                      "prefix": "SWK",
+                      "min": 1000,
+                      "needed": true,
+                      "status": "no",
+                      "sub": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sociology Electives",
+      "complete": false,
+      "type": "group",
+      "credits": "9",
+      "required": 0,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 9,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "SOC-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "SOC",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SOC-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "SOC",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SOC-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "SOC",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SOC-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "SOC",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SOC-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "SOC",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Graphic Design",
+      "complete": false,
+      "type": "group",
+      "credits": "67",
+      "required": 1,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 67,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "Main",
+          "complete": false,
+          "type": "group",
+          "credits": "67",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 67,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "Core",
+              "complete": false,
+              "type": "group",
+              "credits": "58",
+              "required": 21,
+              "numcomplete": 0,
+              "numcreditscomplete": 0,
+              "creditsneeded": 58,
+              "hidden": false,
+              "needed": true,
+              "status": "no",
+              "children": [
+                {
+                  "name": "ART-1100",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-1110",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-1230",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-2230",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-3310",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-3320",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "BUS-2100",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "EMTC-2350",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-1150",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-1220",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-2100",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-2120",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-2600",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-3110",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-3120",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-3230",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-3600",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-4120",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-4230",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-4900",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "IDES-2000",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                }
+              ]
+            },
+            {
+              "name": "Electives",
+              "complete": false,
+              "type": "group",
+              "credits": "6",
+              "required": 0,
+              "numcomplete": 0,
+              "numcreditscomplete": 0,
+              "creditsneeded": 6,
+              "hidden": false,
+              "needed": true,
+              "status": "no",
+              "children": [
+                {
+                  "name": "ART-2110",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-2130",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-2160",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-2170",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-2250",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-3150",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "ART-3250",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "EMTC-2606",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "EMTC-3630",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "GDES-4600",
+                  "complete": false,
+                  "present": false,
+                  "type": "course",
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sport Business Management",
+      "complete": false,
+      "type": "group",
+      "credits": "36",
+      "required": 12,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 36,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "SMGT-1350",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-2100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-2910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-2920",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-3180",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-2500",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-3200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-3300",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-4100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-4200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-4910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SMGT-4990",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "History and Political Science Core",
+      "complete": false,
+      "type": "group",
+      "credits": "33",
+      "required": 12,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 33,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "GSS-3640",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-2010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-2020",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "HIST-3110",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3120",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "HIST-3710",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "HIST-3720",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "POLS-2000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "POLS-3600",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "POLS-3610",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "POLS-3630",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "POLS-3650",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "HIST-1000+",
+          "complete": false,
+          "type": "wildcard",
+          "prefix": "HIST",
+          "min": 1000,
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Civil Engineering Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 16,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "EGCE-1920",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-2320",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-2410",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-2411",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-3210",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-3510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-3610",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-4810",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-4820",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCE-4910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGME-2530",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGME-2630",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Cyber Operations Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 20,
+      "numcomplete": 13,
+      "numcreditscomplete": 38,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CS-1210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-1220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-2210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3410",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-1000",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-2310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3320",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3420",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-4310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CY-4330",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-4810",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CY-4820",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-1010",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-4010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-3450",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "CSCY Double Major Core",
+      "complete": false,
+      "type": "group",
+      "credits": "0",
+      "required": 23,
+      "numcomplete": 15,
+      "numcreditscomplete": 44,
+      "creditsneeded": 0,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "CS-1210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-1220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-2210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3220",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3410",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CS-3510",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CS-3610",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-1000",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-2310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3320",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-3420",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-4310",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CY-4330",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "CY-4810",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "CY-4820",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-2120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-3210",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGCP-4310",
+          "complete": true,
+          "present": true,
+          "type": "course",
+          "needed": true,
+          "status": "yes",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-3110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "EGGN-4010",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "ITM-3450",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Christian Education Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "16",
+      "required": 3,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 16,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BECE-2400",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": null,
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BECE-3680",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-3700",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-3720",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "6",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 6,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BECE-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BECE",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BEPT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BEPT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BEPT",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "International Business Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "18",
+      "required": 3,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 18,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BUS-3910",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "9",
+          "required": 3,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 9,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "ECON-3550",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "ECON-3360",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MGMT-3570",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "MRKT-4620",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "ANTH-1800",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BETH-2260",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "POLS-3650",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comprehensive Communication Arts Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "16",
+      "required": 8,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 16,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "COM-1000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-2000",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-2050",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-2200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-3100",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-3240",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-4110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "COM-4120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        }
+      ]
+    },
+    {
+      "name": "Broadcasting and Digital Media Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "15",
+      "required": 5,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 15,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "BRDM-1110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BRDM-1120",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "BRDM-2110",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "0",
+          "required": 1,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 0,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BRDM-2130",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BRDM-3605",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BRDM-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BRDM",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BRDM-1000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "BRDM",
+              "min": 1000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Latin American Studies Minor",
+      "complete": false,
+      "type": "group",
+      "credits": "22",
+      "required": 6,
+      "numcomplete": 0,
+      "numcreditscomplete": 0,
+      "creditsneeded": 22,
+      "hidden": false,
+      "needed": true,
+      "status": "no",
+      "children": [
+        {
+          "name": "ANTH-1800",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "INTL-3200",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SPAN-2710",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "SPAN-2720",
+          "complete": false,
+          "present": false,
+          "type": "course",
+          "needed": true,
+          "status": "no",
+          "sub": ""
+        },
+        {
+          "name": "",
+          "complete": false,
+          "type": "group",
+          "credits": "3",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 3,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "SPAN-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "SPAN",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "SPAN-3000+",
+              "complete": false,
+              "type": "wildcard",
+              "prefix": "SPAN",
+              "min": 3000,
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            }
+          ]
+        },
+        {
+          "name": "Electives",
+          "complete": false,
+          "type": "group",
+          "credits": "6",
+          "required": 0,
+          "numcomplete": 0,
+          "numcreditscomplete": 0,
+          "creditsneeded": 6,
+          "hidden": false,
+          "needed": true,
+          "status": "no",
+          "children": [
+            {
+              "name": "BEPH-2260",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-3450",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BEPT-3470",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "BUS-3910",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "COM-2140",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "GEO-3510",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "SPAN-3620",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "SPAN-3640",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "SPAN-4670",
+              "complete": false,
+              "present": false,
+              "type": "course",
+              "needed": true,
+              "status": "no",
+              "sub": ""
+            },
+            {
+              "name": "",
+              "complete": false,
+              "type": "group",
+              "credits": "3",
+              "required": 0,
+              "numcomplete": 0,
+              "numcreditscomplete": 0,
+              "creditsneeded": 3,
+              "hidden": false,
+              "needed": true,
+              "status": "no",
+              "children": [
+                {
+                  "name": "SPAN-3000+",
+                  "complete": false,
+                  "type": "wildcard",
+                  "prefix": "SPAN",
+                  "min": 3000,
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                },
+                {
+                  "name": "SPAN-3000+",
+                  "complete": false,
+                  "type": "wildcard",
+                  "prefix": "SPAN",
+                  "min": 3000,
+                  "needed": true,
+                  "status": "no",
+                  "sub": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "majorsExcluded": [
+    "Chemistry (BS)",
+    "Electrical Engineering",
+    "Mathematics (BS)",
+    "Mechanical Engineering",
+    "Physics (BS)",
+    "Physics (BA)",
+    "Mathematics (BA)",
+    "Chemistry (BA)",
+    "Biology (BS)",
+    "Biology (BA)",
+    "Environmental Science",
+    "Forensic Science",
+    "Mathematics Education - Integrated",
+    "Molecular Biology",
+    "Chemistry Education",
+    "Physical Science Education",
+    "Physics Education",
+    "Science Comprehensive Education",
+    "Life Science Education",
+    "Journalism",
+    "Technical and Professional Communication",
+    "Bible Teacher Education",
+    "Intercultural Studies - Missiology",
+    "Pastoral Studies",
+    "Youth Ministries",
+    "Social Studies Education",
+    "Information Technology Management",
+    "Economics (BA)",
+    "Economics (BS)"
+  ],
+  "majorsIncluded": [
+    "Computer Science Core",
+    "Computer Engineering Core",
+    "Geology",
+    "Criminal Justice Requirements",
+    "Geoscience Requirements",
+    "Accounting Core",
+    "Finance Core",
+    "Management Elective Tracks",
+    "Marketing Core",
+    "Music",
+    "Worship",
+    "Music Performance",
+    "Music Composition",
+    "Music Education",
+    "Psychology Core",
+    "History Core",
+    "Biblical Studies Core",
+    "Political Science Core",
+    "Prelaw Core",
+    "Public Administration Core",
+    "International Studies Core",
+    "Preagriculture",
+    "Sociology Electives",
+    "Graphic Design",
+    "Sport Business Management",
+    "History and Political Science Core",
+    "Civil Engineering Core",
+    "Cyber Operations Core",
+    "CSCY Double Major Core",
+    "Christian Education Minor",
+    "International Business Minor",
+    "Comprehensive Communication Arts Minor",
+    "Broadcasting and Digital Media Minor",
+    "Latin American Studies Minor"
+  ]
+}
