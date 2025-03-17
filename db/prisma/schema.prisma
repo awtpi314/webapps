@@ -30,6 +30,18 @@ model course {
   primary_course     equal_courses[]      @relation("Primary")
   equal_course       equal_courses[]      @relation("Equivalent")
   track_requirements track_to_course[]
+  primary_course_req prereq[] @relation("primary_req_id")
+  prereq prereq[] @relation("req")
+}
+
+model prereq {
+  id        Int @id @default(autoincrement())
+  course_id Int
+  prereq_id Int
+  coreq     Boolean?
+
+  course course? @relation("primary_req_id", fields: [course_id], references: [id], onDelete: Cascade)
+  prereq course? @relation("req", fields: [prereq_id], references: [id], onDelete: Cascade)
 }
 
 model equal_courses {
@@ -94,13 +106,13 @@ model minor {
 }
 
 model minor_requirements {
-  id        Int      @id @default(autoincrement())
-  elective  Boolean?
-  minor_id  Int?
-  course_id Int?
-  num_credits   Int?
-  minor     minor?   @relation(fields: [minor_id], references: [id], onDelete: Cascade, map: "minor_requirements_ibfk_1")
-  course    course?  @relation(fields: [course_id], references: [id], onDelete: Cascade, map: "minor_requirements_ibfk_2")
+  id          Int      @id @default(autoincrement())
+  elective    Boolean?
+  minor_id    Int?
+  course_id   Int?
+  num_credits Int?
+  minor       minor?   @relation(fields: [minor_id], references: [id], onDelete: Cascade, map: "minor_requirements_ibfk_1")
+  course      course?  @relation(fields: [course_id], references: [id], onDelete: Cascade, map: "minor_requirements_ibfk_2")
 
   @@index([course_id], map: "course_id")
   @@index([minor_id], map: "minor_id")
@@ -134,7 +146,7 @@ model plans {
 model user {
   id       Int     @id @default(autoincrement())
   name     String? @db.VarChar(40)
-  email    String? @db.VarChar(40) @unique
+  email    String? @unique @db.VarChar(40)
   password String? @db.VarChar(60)
   plans    plans[]
 }
@@ -162,8 +174,8 @@ model semester_to_course {
 }
 
 model tracks {
-  id    Int     @id @default(autoincrement())
-  name  String @db.VarChar(40)
+  id              Int               @id @default(autoincrement())
+  name            String            @db.VarChar(40)
   track_to_course track_to_course[]
 }
 
