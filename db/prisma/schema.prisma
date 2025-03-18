@@ -61,7 +61,7 @@ model equal_courses {
 model major {
   id                 Int                  @id @default(autoincrement())
   name               String?              @db.VarChar(40)
-  num_credits        Float?               @db.Float
+  credits            Float?               @db.Float
   major_requirements major_requirements[]
   major_to_plan      major_to_plan[]
 }
