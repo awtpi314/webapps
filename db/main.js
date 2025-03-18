@@ -6,7 +6,7 @@ async function main() {
   try {
     // Read the courses.json file
     const coursesData = JSON.parse(fs.readFileSync("json_manipulation/courses.json", "utf8"));
-
+    
     // Ensure we have a catalog entry for the current year
     const currentYear = new Date().getFullYear();
     let catalog = await prisma.catalog.findFirst({
@@ -25,9 +25,10 @@ async function main() {
         `Using existing catalog for year ${currentYear} with ID: ${catalog.id}`
       );
     }
-
+    
     // Process each course in the JSON file
     for (const courseData of coursesData.CourseFullModels) {
+      await populateEquivalencies(courseData);
       // Check if the course already exists to avoid duplicates
       const existingCourse = await prisma.course.findFirst({
         where: {
@@ -36,7 +37,8 @@ async function main() {
         },
       });
 
-      await populateReqs(courseData);
+      await populateCourseReqs(courseData);
+      // Handle course equivalencies if they exist 
 
       if (existingCourse) {
         console.log(
@@ -64,12 +66,11 @@ async function main() {
         `Created course: ${courseData.SubjectCode} ${courseData.Number} with ID: ${course.id}`
       );
 
-      // Handle course equivalencies if they exist 
-      // TODO: Implement this
-      populateEquivalencies(courseData);
 
     }
 
+    await populateMinor();
+    await populateMajor();
     console.log("Database population completed successfully");
   } catch (error) {
     console.error("Error populating database:", error);
@@ -83,7 +84,7 @@ main().catch((e) => {
   process.exit(1);
 });
 
-async function populateReqs(courseData) {
+async function populateCourseReqs(courseData) {
   if (courseData.CourseRequisites.length > 0) {
     courseData.CourseRequisites.forEach(requisite => {
       let coreq = false;
@@ -138,16 +139,159 @@ async function populateReqs(courseData) {
     });
   }
 }
+async function populateMajor() {
+  const majorData = JSON.parse(fs.readFileSync('json_manipulation/majors.json', 'utf8'));
 
-async function populateMajorReqs(courseData) {
+  for (const major of majorData.majors) {
+    const name = major.name;
+    let credits = major.credits;
+    if (!credits || credits === '0') credits = 0;
+    credits = parseFloat(credits);
+
+
+    let existingMajor = await prisma.major.findFirst({
+      where: { name: name }
+    })
+
+    if (existingMajor) {
+      console.log(
+        `Minor ${name} already exist at id ${existingMajor.id}`
+      )
+    } else {
+      existingMajor = await prisma.major.create({
+        data: {
+          name,
+          // Add credits if available
+          ...(credits > 0 && { credits: parseInt(credits) })
+        }
+      });
+    }
+    await processMajorReqs(major, existingMajor.id);
+  }
+}
+
+async function processMajorReqs(majorData, majorId) {
+  for (const reqs of majorData.children) {
+    if (reqs.type === "course") {
+      const [subjCode, number] = reqs.name.split('-');
+
+      const course = await prisma.course.findFirst({
+        where: {
+          subject_code: subjCode,
+          number: number
+        }
+      });
+
+      const elective = reqs.needed;
+
+      if (course) {
+
+        const existingMajorReq = await prisma.major_requirements.findFirst({
+          where: {
+            course_id: course.id,
+            major_id: majorId
+          }
+        })
+
+        if (existingMajorReq) {
+          console.log(
+            `Major Requirement with course ${course.id} and major ${majorId} already exists with id ${existingMajorReq.id}`
+          );
+        } else {
+          await prisma.major_requirements.create({
+            data: {
+              elective: elective,
+              course_id: course.id,
+              major_id: majorId,
+            }
+          });
+        }
+      }
+    } else if (reqs.type === "group" && reqs.needed) {
+      await processMajorReqs(reqs, majorId);
+    }
+  }
+
+}
+
+
+async function populateMinor() {
+  const minorData = JSON.parse(fs.readFileSync('json_manipulation/minors.json', 'utf8'));
+
+  for (const minor of minorData.minors) {
+    const name = minor.name;
+    let credits = minor.credits;
+    if (!credits || credits === '0') credits = 0;
+    credits = parseFloat(credits);
+
+
+    let existingMinor = await prisma.minor.findFirst({
+      where: { name: name }
+    })
+
+    if (existingMinor) {
+      console.log(
+        `Minor ${name} already exist at id ${existingMinor.id}`
+      )
+    } else {
+      existingMinor = await prisma.minor.create({
+        data: {
+          name,
+          // Add credits if available
+          ...(credits > 0 && { credits: parseInt(credits) })
+        }
+      });
+    }
+    await processMinorReqs(minor, existingMinor.id);
+  }
+}
+
+async function processMinorReqs(minorData, minorId) {
+  for (const reqs of minorData.children) {
+    if (reqs.type === "course") {
+      const [subjCode, number] = reqs.name.split('-');
+
+      const course = await prisma.course.findFirst({
+        where: {
+          subject_code: subjCode,
+          number: number
+        }
+      });
+
+      const elective = reqs.needed;
+
+      if (course) {
+
+        const existingMinorReq = await prisma.minor_requirements.findFirst({
+          where: {
+            course_id: course.id,
+            minor_id: minorId
+          }
+        })
+
+        if (existingMinorReq) {
+          console.log(
+            `Minor Requirement with course ${course.id} and minor ${minorId} already exists with id ${existingMinorReq.id}`
+          );
+        } else {
+          await prisma.minor_requirements.create({
+            data: {
+              elective: elective,
+              course_id: course.id,
+              minor_id: minorId,
+            }
+          });
+        }
+      }
+    } else if (reqs.type === "group" && reqs.needed) {
+      await processMinorReqs(reqs, minorId);
+    }
+  }
 
 }
 
 async function populateEquivalencies(courseData) {
-  if (
-    courseData.EquatedCourseIds &&
-    courseData.EquatedCourseIds.length > 0
-  ) {
+  if (courseData.EquatedCourseIds) {
     for (const equatedCourseId of courseData.EquatedCourseIds) {
       // Parse the equated course ID to extract subject code and number
       // Assuming format like "ACCT_211" where we need to split by underscore
@@ -169,50 +313,35 @@ async function populateEquivalencies(courseData) {
         // Create the equivalency relationship
         await prisma.equal_courses.create({
           data: {
-            course_id: course.id,
+            course_id: courseData.Id,
             eq_course_id: eqCourse.id,
           },
         });
-        console.log(
-          `Created equivalency between courses: ${course.id} and ${eqCourse.id}`
-        );
       } else if (equatedCourseId.match(/^\S+_\d+$/)) {
         const [eqSubjectCode, eqNumber] = equatedCourseId.split("_");
 
         // Check if the equivalent course exists
-        let eqCourse = await prisma.course.findFirst({
+        const eqCourse = await prisma.course.findFirst({
           where: {
             subject_code: eqSubjectCode,
             number: eqNumber,
           },
         });
-      }
-      // If equivalent course doesn't exist, create a placeholder
-      if (!eqCourse) {
-        eqCourse = await prisma.course.create({
-          data: {
-            subject_code: eqSubjectCode,
-            number: eqNumber,
-            title: `Equivalent to ${courseData.SubjectCode} ${courseData.Number}`,
-            min_credits: courseData.MinimumCredits,
-            max_credits:
-              courseData.MaximumCredits || courseData.MinimumCredits,
-          },
-        });
-        console.log(
-          `Created placeholder for equivalent course: ${eqSubjectCode} ${eqNumber} with ID: ${eqCourse.id}`
-        );
+
+        if (!eqCourse) {
+          console.error(
+            `Course with ID ${equatedCourseId} does not exist for equivalency with ${courseData.SubjectCode} ${courseData.Number}`
+          );
+          continue;
+        }
 
         // Create the equivalency relationship
         await prisma.equal_courses.create({
           data: {
-            course_id: course.id,
+            course_id: courseData.Id,
             eq_course_id: eqCourse.id,
           },
         });
-        console.log(
-          `Created equivalency between courses: ${course.id} and ${eqCourse.id}`
-        );
       }
     }
   }
