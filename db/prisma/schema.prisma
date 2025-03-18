@@ -16,32 +16,34 @@ model catalog {
 /// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
 model course {
   id                 Int                  @id @default(autoincrement())
-  subject_code       String?              @db.VarChar(40)
-  number             String?              @db.VarChar(40)
-  min_credits        Float?               @db.Float
-  max_credits        Float?               @db.Float
   title              String?              @db.VarChar(40)
   description        String?              @db.VarChar(4096)
-  years_offered      String?              @db.VarChar(40)
+  max_credits        Float?               @db.Float
+  min_credits        Float?               @db.Float
+  number             String?              @db.VarChar(40)
+  subject_code       String?              @db.VarChar(40)
   terms_offered      String?              @db.VarChar(40)
-  major_requirements major_requirements[]
-  minor_requirements minor_requirements[]
-  semester_to_course semester_to_course[]
+  years_offered      String?              @db.VarChar(40)
   primary_course     equal_courses[]      @relation("Primary")
   equal_course       equal_courses[]      @relation("Equivalent")
+  major_requirements major_requirements[]
+  minor_requirements minor_requirements[]
+  primary_course_req prereq[]             @relation("primary_req_id")
+  prereq             prereq[]             @relation("req")
+  semester_to_course semester_to_course[]
   track_requirements track_to_course[]
-  primary_course_req prereq[] @relation("primary_req_id")
-  prereq prereq[] @relation("req")
 }
 
 model prereq {
-  id        Int @id @default(autoincrement())
+  id        Int      @id @default(autoincrement())
   course_id Int
   prereq_id Int
   coreq     Boolean?
+  course    course   @relation("primary_req_id", fields: [course_id], references: [id], onDelete: Cascade)
+  prereq    course   @relation("req", fields: [prereq_id], references: [id], onDelete: Cascade)
 
-  course course? @relation("primary_req_id", fields: [course_id], references: [id], onDelete: Cascade)
-  prereq course? @relation("req", fields: [prereq_id], references: [id], onDelete: Cascade)
+  @@index([course_id], map: "prereq_course_id_fkey")
+  @@index([prereq_id], map: "prereq_prereq_id_fkey")
 }
 
 model equal_courses {
@@ -50,14 +52,11 @@ model equal_courses {
   eq_course_id      Int?
   course            course? @relation("Primary", fields: [course_id], references: [id], onDelete: Cascade)
   equivalent_course course? @relation("Equivalent", fields: [eq_course_id], references: [id], onDelete: Cascade)
+
+  @@index([course_id], map: "equal_courses_course_id_fkey")
+  @@index([eq_course_id], map: "equal_courses_eq_course_id_fkey")
 }
 
-model department {
-  id    Int     @id @default(autoincrement())
-  name  String? @db.VarChar(40)
-  major major[]
-  minor minor[]
-}
 
 /// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
 model major {
@@ -65,7 +64,6 @@ model major {
   name               String?              @db.VarChar(40)
   dept_id            Int?
   num_credits        Float?               @db.Float
-  department         department?          @relation(fields: [dept_id], references: [id], onDelete: Cascade, map: "major_ibfk_1")
   major_requirements major_requirements[]
   major_to_plan      major_to_plan[]
 
@@ -98,7 +96,6 @@ model minor {
   id                 Int                  @id @default(autoincrement())
   name               String?              @db.VarChar(40)
   dept_id            Int?
-  department         department?          @relation(fields: [dept_id], references: [id], onDelete: Cascade, map: "minor_ibfk_1")
   minor_requirements minor_requirements[]
   minor_to_plan      minor_to_plan[]
 
