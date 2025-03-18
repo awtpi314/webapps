@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 async function main() {
   try {
     // Read the courses.json file
-    const coursesData = JSON.parse(fs.readFileSync("courses.json", "utf8"));
+    const coursesData = JSON.parse(fs.readFileSync("json_manipulation/courses.json", "utf8"));
 
     // Ensure we have a catalog entry for the current year
     const currentYear = new Date().getFullYear();
@@ -27,7 +27,7 @@ async function main() {
     }
 
     // Process each course in the JSON file
-    for (const courseData of coursesData.Courses) {
+    for (const courseData of coursesData.CourseFullModels) {
       // Check if the course already exists to avoid duplicates
       const existingCourse = await prisma.course.findFirst({
         where: {
@@ -35,6 +35,8 @@ async function main() {
           number: courseData.Number,
         },
       });
+
+      await populateReqs(courseData);
 
       if (existingCourse) {
         console.log(
@@ -65,8 +67,7 @@ async function main() {
       // Handle course equivalencies if they exist 
       // TODO: Implement this
       populateEquivalencies(courseData);
-      
-      populateReqs(courseData);
+
     }
 
     console.log("Database population completed successfully");
@@ -83,9 +84,59 @@ main().catch((e) => {
 });
 
 async function populateReqs(courseData) {
-  if (courseData.CourseRequisites && courseData.CourseRequisites.length > 0) {
-    //must be gathered from json located at page loaded by searching for a major
-}
+  if (courseData.CourseRequisites.length > 0) {
+    courseData.CourseRequisites.forEach(requisite => {
+      let coreq = false;
+      if (requisite.DisplayTextExtension.includes('either')) {
+        //coreq
+        coreq = true;
+      } else if (requisite.DisplayTextExtension.includes('prior')) {
+        //prereq
+        coreq = false;
+      } else {
+        console.error(`Requisite : ${requisite} neither prereq or coreq`)
+      }
+      requisite.DisplayText.split(" ").forEach(async (course) => {
+
+        if (/\d/.test(course)) {
+          const prereq = await prisma.course.findFirst({
+            where: {
+              subject_code: course.split("-")[0],
+              number: course.split("-")[1]
+            }
+          })
+
+          if (prereq === null) {
+            console.log(`Prereq : ${course} - not found`);
+            return;
+          }
+
+          const existingPrereq = await prisma.prereq.findFirst({
+            where: {
+              course_id: courseData.id,
+              prereq_id: prereq.id
+            }
+          })
+
+          if (existingPrereq) {
+            console.log(
+              `Prereq ${existingPrereq.course_id} ${existingPrereq.prereq_id} already exists with ID: ${existingPrereq.id}`
+            );
+          } else {
+            await prisma.prereq.create({
+              data: {
+                course_id: parseInt(courseData.Id),
+                prereq_id: prereq.id,
+                coreq: coreq
+              }
+            })
+          }
+        }
+
+      })
+
+    });
+  }
 }
 
 async function populateMajorReqs(courseData) {
