@@ -57,7 +57,6 @@ model equal_courses {
   @@index([eq_course_id], map: "equal_courses_eq_course_id_fkey")
 }
 
-
 /// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
 model major {
   id                 Int                  @id @default(autoincrement())
@@ -92,6 +91,7 @@ model major_to_plan {
 model minor {
   id                 Int                  @id @default(autoincrement())
   name               String?              @db.VarChar(40)
+  credits            Int?
   minor_requirements minor_requirements[]
   minor_to_plan      minor_to_plan[]
 }
