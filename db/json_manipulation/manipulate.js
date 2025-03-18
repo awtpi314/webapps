@@ -1,5 +1,4 @@
 import fs from 'fs';
-import { json } from 'stream/consumers';
 
 let majors = [
     "Computer Science", "Computer Engineering", "Chemistry (BS)", "Electrical Engineering",
