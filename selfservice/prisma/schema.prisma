@@ -1,0 +1,333 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider             = "prisma-client-py"
+  recursive_type_depth = 5
+}
+
+// Enums
+enum DegreeType {
+  BS
+  BA
+  BM
+  BME
+  CERT
+  ND
+  CE
+  DD
+  DHM
+  DNP
+  PHRMD
+  GCRT
+  LTD
+  MAI
+  MMSPA
+  MABL
+  MAWT
+  MAT
+  MSN
+  MTS
+  MBA
+  MDIV
+  MMIN
+  MS
+}
+
+enum OfferedYears {
+  ALL_YEARS
+  EVEN_YEARS
+  ODD_YEARS
+}
+
+enum SeasonsOffered {
+  FALL_ONLY
+  SPRING_ONLY
+  FALL_SPRING
+  SUMMER_ONLY
+  FALL_SPRING_SUMMER
+}
+
+enum Season {
+  FALL
+  SPRING
+  SUMMER
+}
+
+// User Authentication
+model User {
+  id             String          @id @default(cuid())
+  email          String          @unique
+  password_hash  String
+  InstructorUser InstructorUser?
+  StudentUser    StudentUser?
+  AdminUser      AdminUser?
+}
+
+// University Structure
+model Department {
+  id         String       @id @default(cuid())
+  name       String       @unique
+  code       String       @unique
+  Major      Major[]
+  Instructor Instructor[]
+  Minor      Minor[]
+}
+
+model Major {
+  id           String     @id @default(cuid())
+  name         String     @unique
+  type         DegreeType
+  departmentId String
+
+  department Department   @relation(fields: [departmentId], references: [id])
+  Student    Student[]
+  GenEd      GenEd[]
+  Cognates   Cognates[]
+  Core       Core[]
+  Track      Track[]
+  Electives  Electives[]
+  PlanMajors PlanMajors[]
+}
+
+model Minor {
+  id           String     @id @default(cuid())
+  name         String     @unique
+  type         DegreeType
+  departmentId String
+
+  department Department   @relation(fields: [departmentId], references: [id])
+  PlanMinors PlanMinors[]
+}
+
+// People
+model Admin {
+  id        String @id @default(cuid())
+  firstName String
+  lastName  String
+
+  AdminUser AdminUser?
+}
+
+model Instructor {
+  id           String @id @default(cuid())
+  firstName    String
+  lastName     String
+  prefix       String
+  departmentId String
+
+  department     Department      @relation(fields: [departmentId], references: [id])
+  InstructorUser InstructorUser?
+  Teaches        Teaches[]
+}
+
+model Student {
+  id        String @id @default(cuid())
+  firstName String
+  lastName  String
+  majorId   String
+
+  major       Major        @relation(fields: [majorId], references: [id])
+  StudentUser StudentUser?
+  Plan        Plan[]
+}
+
+// Courses
+model Course {
+  id             String         @id @default(cuid())
+  title          String
+  description    String         @db.VarChar(4096)
+  credits        Float
+  maxCredits     Float?
+  stepCredits    Float?
+  offeredYears   OfferedYears
+  seasonsOffered SeasonsOffered
+  subject        String
+  code           String
+
+  Teaches     Teaches[]
+  CourseTaken CourseTaken[]
+
+  requisites   Requisite[] @relation("CourseToRequisites")
+  requisiteFor Requisite[] @relation("RequisiteCourse")
+  GenEd        GenEd[]
+  Cognates     Cognates[]
+  Core         Core[]
+  Track        Track[]
+  Electives    Electives[]
+}
+
+enum RequisiteType {
+  PREREQUISITE
+  CO_REQUISITE
+}
+
+model Requisite {
+  id        String        @id @default(cuid())
+  courseId  String
+  reqCourse String
+  type      RequisiteType
+
+  course Course @relation("CourseToRequisites", fields: [courseId], references: [id])
+  req    Course @relation("RequisiteCourse", fields: [reqCourse], references: [id])
+}
+
+model Teaches {
+  id           String @id @default(cuid())
+  instructorId String
+  courseId     String
+
+  instructor Instructor @relation(fields: [instructorId], references: [id])
+  course     Course     @relation(fields: [courseId], references: [id])
+}
+
+// Curriculum Tracking
+model CourseTaken {
+  id         String @id @default(cuid())
+  courseId   String
+  semesterId String
+
+  course   Course   @relation(fields: [courseId], references: [id])
+  semester Semester @relation(fields: [semesterId], references: [id])
+}
+
+model GenEd {
+  id       String @id @default(cuid())
+  majorId  String
+  courseId String
+
+  major  Major  @relation(fields: [majorId], references: [id])
+  course Course @relation(fields: [courseId], references: [id])
+}
+
+model Cognates {
+  id       String @id @default(cuid())
+  majorId  String
+  courseId String
+
+  major  Major  @relation(fields: [majorId], references: [id])
+  course Course @relation(fields: [courseId], references: [id])
+}
+
+model Core {
+  id       String @id @default(cuid())
+  majorId  String
+  courseId String
+
+  major  Major  @relation(fields: [majorId], references: [id])
+  course Course @relation(fields: [courseId], references: [id])
+}
+
+model Track {
+  id       String @id @default(cuid())
+  name     String @unique
+  majorId  String
+  courseId String
+
+  major  Major  @relation(fields: [majorId], references: [id])
+  course Course @relation(fields: [courseId], references: [id])
+}
+
+model Electives {
+  id       String @id @default(cuid())
+  majorId  String
+  courseId String
+
+  major  Major  @relation(fields: [majorId], references: [id])
+  course Course @relation(fields: [courseId], references: [id])
+}
+
+// Planning
+model Plan {
+  id        String   @id @default(cuid())
+  name      String
+  createdAt DateTime @default(now())
+  studentId String?
+  catalogId String
+
+  student      Student?        @relation(fields: [studentId], references: [id])
+  catalog      Catalog        @relation(fields: [catalogId], references: [id])
+  Semester     Semester[]
+  PlanCategory PlanCategory[]
+  PlanMajors   PlanMajors[]
+  PlanMinors   PlanMinors[]
+}
+
+model PlanMajors {
+  id      String @id @default(cuid())
+  planId  String
+  majorId String
+
+  plan  Plan  @relation(fields: [planId], references: [id])
+  major Major @relation(fields: [majorId], references: [id])
+}
+
+model PlanMinors {
+  id      String @id @default(cuid())
+  planId  String
+  minorId String
+
+  plan  Plan  @relation(fields: [planId], references: [id])
+  minor Minor @relation(fields: [minorId], references: [id])
+}
+
+model PlanCategory {
+  id               String  @id @default(cuid())
+  name             String
+  credits          Float?
+  count            Int?
+  wildcard         String?
+  planId           String?
+  parentCategoryId String?
+
+  plan           Plan?         @relation(fields: [planId], references: [id])
+  parentCategory PlanCategory? @relation("ParentCategory", fields: [parentCategoryId], references: [id])
+
+  children PlanCategory[] @relation("ParentCategory")
+}
+
+model Semester {
+  id     String @id @default(cuid())
+  year   Int
+  season Season
+  planId String
+
+  plan        Plan          @relation(fields: [planId], references: [id])
+  CourseTaken CourseTaken[]
+}
+
+model Catalog {
+  id   String @id @default(cuid())
+  year String @unique
+  Plan Plan[]
+}
+
+// Join Tables for Authentication
+model AdminUser {
+  id      String @id @default(cuid())
+  adminId String @unique
+  userId  String @unique
+
+  admin Admin @relation(fields: [adminId], references: [id])
+  user  User  @relation(fields: [userId], references: [id])
+}
+
+model InstructorUser {
+  id           String @id @default(cuid())
+  instructorId String @unique
+  userId       String @unique
+
+  instructor Instructor @relation(fields: [instructorId], references: [id])
+  user       User       @relation(fields: [userId], references: [id])
+}
+
+model StudentUser {
+  id        String @id @default(cuid())
+  studentId String @unique
+  userId    String @unique
+
+  student Student @relation(fields: [studentId], references: [id])
+  user    User    @relation(fields: [userId], references: [id])
+}
