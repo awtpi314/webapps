@@ -106,7 +106,6 @@ async def main() -> None:
     sample_plan = await db.plan.create(
         data={
             "name": "Sample Plan",
-            "studentId": "cm8pdsm6c000121ru1jmknug5",
             "catalogId": "cm8pdv31d0000r1wtr2ohtw9w",
         }
     )
