@@ -1,15 +1,302 @@
+generator client {
+  provider             = "prisma-client-py"
+  recursive_type_depth = "5"
+}
+
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider             = "prisma-client-py"
-  recursive_type_depth = 5
+model efmigrationshistory {
+  MigrationId    String @id @db.VarChar(150)
+  ProductVersion String @db.VarChar(32)
+
+  @@map("__efmigrationshistory")
 }
 
-// Enums
-enum DegreeType {
+model aspnetroleclaims {
+  Id          Int         @id @default(autoincrement())
+  RoleId      String      @db.VarChar(255)
+  ClaimType   String?     @db.LongText
+  ClaimValue  String?     @db.LongText
+  aspnetroles aspnetroles @relation(fields: [RoleId], references: [Id], onDelete: Cascade, onUpdate: NoAction, map: "FK_AspNetRoleClaims_AspNetRoles_RoleId")
+
+  @@index([RoleId], map: "IX_AspNetRoleClaims_RoleId")
+}
+
+model aspnetroles {
+  Id               String             @id @db.VarChar(255)
+  Name             String?            @db.VarChar(256)
+  NormalizedName   String?            @unique(map: "RoleNameIndex") @db.VarChar(256)
+  ConcurrencyStamp String?            @db.LongText
+  aspnetroleclaims aspnetroleclaims[]
+  aspnetuserroles  aspnetuserroles[]
+}
+
+model aspnetuserclaims {
+  Id          Int         @id @default(autoincrement())
+  UserId      String      @db.VarChar(255)
+  ClaimType   String?     @db.LongText
+  ClaimValue  String?     @db.LongText
+  aspnetusers aspnetusers @relation(fields: [UserId], references: [Id], onDelete: Cascade, onUpdate: NoAction, map: "FK_AspNetUserClaims_AspNetUsers_UserId")
+
+  @@index([UserId], map: "IX_AspNetUserClaims_UserId")
+}
+
+model aspnetuserlogins {
+  LoginProvider       String      @db.VarChar(255)
+  ProviderKey         String      @db.VarChar(255)
+  ProviderDisplayName String?     @db.LongText
+  UserId              String      @db.VarChar(255)
+  aspnetusers         aspnetusers @relation(fields: [UserId], references: [Id], onDelete: Cascade, onUpdate: NoAction, map: "FK_AspNetUserLogins_AspNetUsers_UserId")
+
+  @@id([LoginProvider, ProviderKey])
+  @@index([UserId], map: "IX_AspNetUserLogins_UserId")
+}
+
+model aspnetuserroles {
+  UserId      String      @db.VarChar(255)
+  RoleId      String      @db.VarChar(255)
+  aspnetroles aspnetroles @relation(fields: [RoleId], references: [Id], onDelete: Cascade, onUpdate: NoAction, map: "FK_AspNetUserRoles_AspNetRoles_RoleId")
+  aspnetusers aspnetusers @relation(fields: [UserId], references: [Id], onDelete: Cascade, onUpdate: NoAction, map: "FK_AspNetUserRoles_AspNetUsers_UserId")
+
+  @@id([UserId, RoleId])
+  @@index([RoleId], map: "IX_AspNetUserRoles_RoleId")
+}
+
+model aspnetusers {
+  Id                   String             @id @db.VarChar(255)
+  UserName             String?            @db.VarChar(256)
+  NormalizedUserName   String?            @unique(map: "UserNameIndex") @db.VarChar(256)
+  Email                String?            @db.VarChar(256)
+  NormalizedEmail      String?            @db.VarChar(256)
+  EmailConfirmed       Boolean
+  PasswordHash         String?            @db.LongText
+  SecurityStamp        String?            @db.LongText
+  ConcurrencyStamp     String?            @db.LongText
+  PhoneNumber          String?            @db.LongText
+  PhoneNumberConfirmed Boolean
+  TwoFactorEnabled     Boolean
+  LockoutEnd           DateTime?          @db.DateTime(6)
+  LockoutEnabled       Boolean
+  AccessFailedCount    Int
+  aspnetuserclaims     aspnetuserclaims[]
+  aspnetuserlogins     aspnetuserlogins[]
+  aspnetuserroles      aspnetuserroles[]
+  aspnetusertokens     aspnetusertokens[]
+  instructor           instructor[]
+  student              student[]
+
+  @@index([NormalizedEmail], map: "EmailIndex")
+}
+
+model aspnetusertokens {
+  UserId        String      @db.VarChar(255)
+  LoginProvider String      @db.VarChar(255)
+  Name          String      @db.VarChar(255)
+  Value         String?     @db.LongText
+  aspnetusers   aspnetusers @relation(fields: [UserId], references: [Id], onDelete: Cascade, onUpdate: NoAction, map: "FK_AspNetUserTokens_AspNetUsers_UserId")
+
+  @@id([UserId, LoginProvider, Name])
+}
+
+model catalog {
+  id   String @id
+  year String @unique(map: "Catalog_year_key")
+  plan plan[]
+}
+
+model course {
+  id                                    String                @id
+  title                                 String
+  description                           String                @db.VarChar(4096)
+  credits                               Float
+  maxCredits                            Float?
+  stepCredits                           Float?
+  offeredYears                          course_offeredYears
+  seasonsOffered                        course_seasonsOffered
+  code                                  String
+  subject                               String
+  coursetaken                           coursetaken[]
+  requisite_requisite_courseIdTocourse  requisite[]           @relation("requisite_courseIdTocourse")
+  requisite_requisite_reqCourseTocourse requisite[]           @relation("requisite_reqCourseTocourse")
+  teaches                               teaches[]
+}
+
+model coursetaken {
+  id         String   @id
+  courseId   String
+  semesterId String
+  course     course   @relation(fields: [courseId], references: [id], map: "CourseTaken_courseId_fkey")
+  semester   semester @relation(fields: [semesterId], references: [id], map: "CourseTaken_semesterId_fkey")
+
+  @@index([courseId], map: "CourseTaken_courseId_fkey")
+  @@index([semesterId], map: "CourseTaken_semesterId_fkey")
+}
+
+model department {
+  id         String       @id @default(cuid())
+  name       String       @unique(map: "Department_name_key")
+  code       String       @unique(map: "Department_code_key")
+  instructor instructor[]
+  major      major[]
+  minor      minor[]
+}
+
+model instructor {
+  id           String      @id
+  firstName    String
+  lastName     String
+  prefix       String
+  departmentId String
+  userId       String      @db.VarChar(255)
+  user         aspnetusers @relation(fields: [userId], references: [Id], map: "Instructor_userId_fkey")
+  department   department  @relation(fields: [departmentId], references: [id], map: "Instructor_departmentId_fkey")
+  teaches      teaches[]
+  advisor      advisor[]
+
+  @@index([departmentId], map: "Instructor_departmentId_fkey")
+  @@index([userId], map: "Instructor_userId_fkey")
+}
+
+model advisor {
+  id           String     @id
+  instructorId String
+  studentId    String
+  instructor   instructor @relation(fields: [instructorId], references: [id], map: "Advisor_instructorId_fkey")
+  student      student    @relation(fields: [studentId], references: [id], map: "Advisor_studentId_fkey")
+}
+
+model major {
+  id           String       @id
+  name         String       @unique(map: "Major_name_key")
+  type         major_type
+  departmentId String
+  sampleplanId String?
+  department   department   @relation(fields: [departmentId], references: [id], map: "Major_departmentId_fkey")
+  planmajors   planmajors[]
+  student      student[]
+
+  @@index([departmentId], map: "Major_departmentId_fkey")
+}
+
+model minor {
+  id           String       @id
+  name         String       @unique(map: "Minor_name_key")
+  type         minor_type
+  departmentId String
+  department   department   @relation(fields: [departmentId], references: [id], map: "Minor_departmentId_fkey")
+  planminors   planminors[]
+
+  @@index([departmentId], map: "Minor_departmentId_fkey")
+}
+
+model plan {
+  id           String         @id
+  studentId    String?
+  catalogId    String
+  createdAt    DateTime       @default(now())
+  name         String
+  catalog      catalog        @relation(fields: [catalogId], references: [id], map: "Plan_catalogId_fkey")
+  student      student?       @relation(fields: [studentId], references: [id], map: "Plan_studentId_fkey")
+  plancategory plancategory[]
+  planmajors   planmajors[]
+  planminors   planminors[]
+  semester     semester[]
+
+  @@index([catalogId], map: "Plan_catalogId_fkey")
+  @@index([studentId], map: "Plan_studentId_fkey")
+}
+
+model plancategory {
+  id                 String         @id
+  name               String
+  credits            Float?
+  count              Int?
+  wildcard           String?
+  planId             String?
+  parentCategoryId   String?
+  plancategory       plancategory?  @relation("plancategoryToplancategory", fields: [parentCategoryId], references: [id], map: "PlanCategory_parentCategoryId_fkey")
+  other_plancategory plancategory[] @relation("plancategoryToplancategory")
+  plan               plan?          @relation(fields: [planId], references: [id], map: "PlanCategory_planId_fkey")
+
+  @@index([parentCategoryId], map: "PlanCategory_parentCategoryId_fkey")
+  @@index([planId], map: "PlanCategory_planId_fkey")
+}
+
+model planmajors {
+  id      String @id
+  planId  String
+  majorId String
+  major   major  @relation(fields: [majorId], references: [id], map: "PlanMajors_majorId_fkey")
+  plan    plan   @relation(fields: [planId], references: [id], map: "PlanMajors_planId_fkey")
+
+  @@index([majorId], map: "PlanMajors_majorId_fkey")
+  @@index([planId], map: "PlanMajors_planId_fkey")
+}
+
+model planminors {
+  id      String @id
+  planId  String
+  minorId String
+  minor   minor  @relation(fields: [minorId], references: [id], map: "PlanMinors_minorId_fkey")
+  plan    plan   @relation(fields: [planId], references: [id], map: "PlanMinors_planId_fkey")
+
+  @@index([minorId], map: "PlanMinors_minorId_fkey")
+  @@index([planId], map: "PlanMinors_planId_fkey")
+}
+
+model requisite {
+  id                                 String         @id
+  courseId                           String
+  reqCourse                          String
+  type                               requisite_type
+  course_requisite_courseIdTocourse  course         @relation("requisite_courseIdTocourse", fields: [courseId], references: [id], map: "Requisite_courseId_fkey")
+  course_requisite_reqCourseTocourse course         @relation("requisite_reqCourseTocourse", fields: [reqCourse], references: [id], map: "Requisite_reqCourse_fkey")
+
+  @@index([courseId], map: "Requisite_courseId_fkey")
+  @@index([reqCourse], map: "Requisite_reqCourse_fkey")
+}
+
+model semester {
+  id          String          @id
+  year        Int
+  season      semester_season
+  planId      String
+  coursetaken coursetaken[]
+  plan        plan            @relation(fields: [planId], references: [id], map: "Semester_planId_fkey")
+
+  @@index([planId], map: "Semester_planId_fkey")
+}
+
+model student {
+  id        String       @id
+  firstName String
+  lastName  String
+  majorId   String
+  userId    String?      @db.VarChar(255)
+  user      aspnetusers? @relation(fields: [userId], references: [Id], map: "Student_userId_fkey")
+  plan      plan[]
+  major     major        @relation(fields: [majorId], references: [id], map: "Student_majorId_fkey")
+  advisor   advisor[]
+
+  @@index([majorId], map: "Student_majorId_fkey")
+  @@index([userId], map: "Student_userId_fkey")
+}
+
+model teaches {
+  id           String     @id
+  instructorId String
+  courseId     String
+  course       course     @relation(fields: [courseId], references: [id], map: "Teaches_courseId_fkey")
+  instructor   instructor @relation(fields: [instructorId], references: [id], map: "Teaches_instructorId_fkey")
+
+  @@index([courseId], map: "Teaches_courseId_fkey")
+  @@index([instructorId], map: "Teaches_instructorId_fkey")
+}
+
+enum major_type {
   BS
   BA
   BM
@@ -36,298 +323,54 @@ enum DegreeType {
   MS
 }
 
-enum OfferedYears {
-  ALL_YEARS
-  EVEN_YEARS
-  ODD_YEARS
+enum minor_type {
+  BS
+  BA
+  BM
+  BME
+  CERT
+  ND
+  CE
+  DD
+  DHM
+  DNP
+  PHRMD
+  GCRT
+  LTD
+  MAI
+  MMSPA
+  MABL
+  MAWT
+  MAT
+  MSN
+  MTS
+  MBA
+  MDIV
+  MMIN
+  MS
 }
 
-enum SeasonsOffered {
-  FALL_ONLY
-  SPRING_ONLY
-  FALL_SPRING
-  SUMMER_ONLY
-  FALL_SPRING_SUMMER
-}
-
-enum Season {
+enum semester_season {
   FALL
   SPRING
   SUMMER
 }
 
-// User Authentication
-model User {
-  id             String          @id @default(cuid())
-  email          String          @unique
-  password_hash  String
-  InstructorUser InstructorUser?
-  StudentUser    StudentUser?
-  AdminUser      AdminUser?
-}
-
-// University Structure
-model Department {
-  id         String       @id @default(cuid())
-  name       String       @unique
-  code       String       @unique
-  Major      Major[]
-  Instructor Instructor[]
-  Minor      Minor[]
-}
-
-model Major {
-  id           String     @id @default(cuid())
-  name         String     @unique
-  type         DegreeType
-  departmentId String
-
-  department Department   @relation(fields: [departmentId], references: [id])
-  Student    Student[]
-  GenEd      GenEd[]
-  Cognates   Cognates[]
-  Core       Core[]
-  Track      Track[]
-  Electives  Electives[]
-  PlanMajors PlanMajors[]
-}
-
-model Minor {
-  id           String     @id @default(cuid())
-  name         String     @unique
-  type         DegreeType
-  departmentId String
-
-  department Department   @relation(fields: [departmentId], references: [id])
-  PlanMinors PlanMinors[]
-}
-
-// People
-model Admin {
-  id        String @id @default(cuid())
-  firstName String
-  lastName  String
-
-  AdminUser AdminUser?
-}
-
-model Instructor {
-  id           String @id @default(cuid())
-  firstName    String
-  lastName     String
-  prefix       String
-  departmentId String
-
-  department     Department      @relation(fields: [departmentId], references: [id])
-  InstructorUser InstructorUser?
-  Teaches        Teaches[]
-}
-
-model Student {
-  id        String @id @default(cuid())
-  firstName String
-  lastName  String
-  majorId   String
-
-  major       Major        @relation(fields: [majorId], references: [id])
-  StudentUser StudentUser?
-  Plan        Plan[]
-}
-
-// Courses
-model Course {
-  id             String         @id @default(cuid())
-  title          String
-  description    String         @db.VarChar(4096)
-  credits        Float
-  maxCredits     Float?
-  stepCredits    Float?
-  offeredYears   OfferedYears
-  seasonsOffered SeasonsOffered
-  subject        String
-  code           String
-
-  Teaches     Teaches[]
-  CourseTaken CourseTaken[]
-
-  requisites   Requisite[] @relation("CourseToRequisites")
-  requisiteFor Requisite[] @relation("RequisiteCourse")
-  GenEd        GenEd[]
-  Cognates     Cognates[]
-  Core         Core[]
-  Track        Track[]
-  Electives    Electives[]
-}
-
-enum RequisiteType {
+enum requisite_type {
   PREREQUISITE
   CO_REQUISITE
 }
 
-model Requisite {
-  id        String        @id @default(cuid())
-  courseId  String
-  reqCourse String
-  type      RequisiteType
-
-  course Course @relation("CourseToRequisites", fields: [courseId], references: [id])
-  req    Course @relation("RequisiteCourse", fields: [reqCourse], references: [id])
+enum course_offeredYears {
+  ALL_YEARS
+  EVEN_YEARS
+  ODD_YEARS
 }
 
-model Teaches {
-  id           String @id @default(cuid())
-  instructorId String
-  courseId     String
-
-  instructor Instructor @relation(fields: [instructorId], references: [id])
-  course     Course     @relation(fields: [courseId], references: [id])
-}
-
-// Curriculum Tracking
-model CourseTaken {
-  id         String @id @default(cuid())
-  courseId   String
-  semesterId String
-
-  course   Course   @relation(fields: [courseId], references: [id])
-  semester Semester @relation(fields: [semesterId], references: [id])
-}
-
-model GenEd {
-  id       String @id @default(cuid())
-  majorId  String
-  courseId String
-
-  major  Major  @relation(fields: [majorId], references: [id])
-  course Course @relation(fields: [courseId], references: [id])
-}
-
-model Cognates {
-  id       String @id @default(cuid())
-  majorId  String
-  courseId String
-
-  major  Major  @relation(fields: [majorId], references: [id])
-  course Course @relation(fields: [courseId], references: [id])
-}
-
-model Core {
-  id       String @id @default(cuid())
-  majorId  String
-  courseId String
-
-  major  Major  @relation(fields: [majorId], references: [id])
-  course Course @relation(fields: [courseId], references: [id])
-}
-
-model Track {
-  id       String @id @default(cuid())
-  name     String @unique
-  majorId  String
-  courseId String
-
-  major  Major  @relation(fields: [majorId], references: [id])
-  course Course @relation(fields: [courseId], references: [id])
-}
-
-model Electives {
-  id       String @id @default(cuid())
-  majorId  String
-  courseId String
-
-  major  Major  @relation(fields: [majorId], references: [id])
-  course Course @relation(fields: [courseId], references: [id])
-}
-
-// Planning
-model Plan {
-  id        String   @id @default(cuid())
-  name      String
-  createdAt DateTime @default(now())
-  studentId String?
-  catalogId String
-
-  student      Student?        @relation(fields: [studentId], references: [id])
-  catalog      Catalog        @relation(fields: [catalogId], references: [id])
-  Semester     Semester[]
-  PlanCategory PlanCategory[]
-  PlanMajors   PlanMajors[]
-  PlanMinors   PlanMinors[]
-}
-
-model PlanMajors {
-  id      String @id @default(cuid())
-  planId  String
-  majorId String
-
-  plan  Plan  @relation(fields: [planId], references: [id])
-  major Major @relation(fields: [majorId], references: [id])
-}
-
-model PlanMinors {
-  id      String @id @default(cuid())
-  planId  String
-  minorId String
-
-  plan  Plan  @relation(fields: [planId], references: [id])
-  minor Minor @relation(fields: [minorId], references: [id])
-}
-
-model PlanCategory {
-  id               String  @id @default(cuid())
-  name             String
-  credits          Float?
-  count            Int?
-  wildcard         String?
-  planId           String?
-  parentCategoryId String?
-
-  plan           Plan?         @relation(fields: [planId], references: [id])
-  parentCategory PlanCategory? @relation("ParentCategory", fields: [parentCategoryId], references: [id])
-
-  children PlanCategory[] @relation("ParentCategory")
-}
-
-model Semester {
-  id     String @id @default(cuid())
-  year   Int
-  season Season
-  planId String
-
-  plan        Plan          @relation(fields: [planId], references: [id])
-  CourseTaken CourseTaken[]
-}
-
-model Catalog {
-  id   String @id @default(cuid())
-  year String @unique
-  Plan Plan[]
-}
-
-// Join Tables for Authentication
-model AdminUser {
-  id      String @id @default(cuid())
-  adminId String @unique
-  userId  String @unique
-
-  admin Admin @relation(fields: [adminId], references: [id])
-  user  User  @relation(fields: [userId], references: [id])
-}
-
-model InstructorUser {
-  id           String @id @default(cuid())
-  instructorId String @unique
-  userId       String @unique
-
-  instructor Instructor @relation(fields: [instructorId], references: [id])
-  user       User       @relation(fields: [userId], references: [id])
-}
-
-model StudentUser {
-  id        String @id @default(cuid())
-  studentId String @unique
-  userId    String @unique
-
-  student Student @relation(fields: [studentId], references: [id])
-  user    User    @relation(fields: [userId], references: [id])
+enum course_seasonsOffered {
+  FALL_ONLY
+  SPRING_ONLY
+  FALL_SPRING
+  SUMMER_ONLY
+  FALL_SPRING_SUMMER
 }

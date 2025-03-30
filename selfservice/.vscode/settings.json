@@ -1,0 +1,17 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default",
+        "enableSsl": "Disabled"
+      },
+      "previewLimit": 50,
+      "server": "100.121.225.127",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "Webapps P5",
+      "database": "project5",
+      "username": "awtpi"
+    }
+  ]
+}

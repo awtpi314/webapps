@@ -2,8 +2,13 @@ import asyncio
 import json
 import re
 
-from prisma.enums import (DegreeType, OfferedYears, RequisiteType,
-                          SeasonsOffered)
+from cuid import cuid
+from prisma.enums import (
+    major_type as DegreeType,
+    course_offeredYears as OfferedYears,
+    requisite_type as RequisiteType,
+    course_seasonsOffered as SeasonsOffered,
+)
 from selenium import webdriver
 
 from prisma import Prisma
@@ -12,7 +17,7 @@ from prisma import Prisma
 async def main() -> None:
 
     # ENTER YOUR USER ID HERE
-    user_id =
+    user_id = "2685707"
 
     driver = webdriver.Chrome()
     driver.get(
@@ -24,7 +29,9 @@ async def main() -> None:
     current_plan = driver.execute_async_script(
         """
         const scrape = async () => {
-          const response = await fetch("https://selfservice.cedarville.edu/Student/Planning/DegreePlans/Current?studentId=""" + user_id + """");
+          const response = await fetch("https://selfservice.cedarville.edu/Student/Planning/DegreePlans/Current?studentId="""
+        + user_id
+        + """");
           const data = await response.json();
           return data;
         };
@@ -103,6 +110,7 @@ async def main() -> None:
 
             batcher.major.create(
                 {
+                    "id": cuid(),
                     "name": major_name,
                     "type": major_degree,
                     "departmentId": major_dept.id,
@@ -206,6 +214,7 @@ async def main() -> None:
                     continue
 
                 course_information = {
+                    "id": cuid(),
                     "title": course["Title"],
                     "description": course["Description"],
                     "credits": course["MinimumCredits"],
@@ -265,6 +274,7 @@ async def main() -> None:
                         )
                         batcher.requisite.create(
                             {
+                                "id": cuid(),
                                 "courseId": current_course.id,
                                 "reqCourse": req_course.id,
                                 "type": is_prereq,
