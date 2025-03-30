@@ -10,6 +10,10 @@ from prisma import Prisma
 
 
 async def main() -> None:
+
+    # ENTER YOUR USER ID HERE
+    user_id =
+
     driver = webdriver.Chrome()
     driver.get(
         "https://selfservice.cedarville.edu/Student/Planning/Programs/MyProgress"
@@ -20,7 +24,7 @@ async def main() -> None:
     current_plan = driver.execute_async_script(
         """
         const scrape = async () => {
-          const response = await fetch("https://selfservice.cedarville.edu/Student/Planning/DegreePlans/Current?studentId=2685707");
+          const response = await fetch("https://selfservice.cedarville.edu/Student/Planning/DegreePlans/Current?studentId=""" + user_id + """");
           const data = await response.json();
           return data;
         };
@@ -30,7 +34,7 @@ async def main() -> None:
     )
 
     body_content = json.dumps(
-        {"studentId": "2685707", "degreePlan": current_plan["DegreePlan"]}
+        {"studentId": f"{user_id}", "degreePlan": current_plan["DegreePlan"]}
     )
 
     student_eval = driver.execute_async_script(
