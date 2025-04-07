@@ -2,6 +2,7 @@ import asyncio
 import json
 import re
 from unicodedata import category
+import uuid
 
 from cursesmenu import CursesMenu
 from cursesmenu.items import MenuItem
@@ -63,6 +64,7 @@ async def create_plan_item(
     parent_id: str, parent_is_plan: bool, plan_item: dict, db: Prisma
 ) -> None:
     data = {
+        "id": str(uuid.uuid4()),
         "name": plan_item["name"],
     }
     if parent_is_plan:
@@ -103,14 +105,21 @@ async def main() -> None:
 
     major = await db.major.find_first(where={"name": "Computer Science"})
 
+    catalog = await db.catalog.find_first(where={"year":"2025"})
+
+    student = await db.student.find_first()
+
     sample_plan = await db.plan.create(
         data={
+            "id": str(uuid.uuid4()),
             "name": "Sample Plan",
-            "catalogId": "cm8pdv31d0000r1wtr2ohtw9w",
+            "catalogId": catalog.id,
+            "studentId": student.id,
         }
     )
     await db.planmajors.create(
         data={
+            "id": str(uuid.uuid4()),
             "planId": sample_plan.id,
             "majorId": major.id,
         }
